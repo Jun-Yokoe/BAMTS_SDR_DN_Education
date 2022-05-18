@@ -63,6 +63,7 @@
     <Content Include="SQL\P_Get_T_EMPLOYEE_ALL.sql" />
     <Content Include="SQL\S_T_EMPLOYEE.sql" />
     <Content Include="SQL\P_Replace_T_EMPLOYEE_ALL.sql" />
+    <Content Include="SQL\AlterDatabase.sql" />
     <Content Include="SQL\T_EMPLOYEE.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
