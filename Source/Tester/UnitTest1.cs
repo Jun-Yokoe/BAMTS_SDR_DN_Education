@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using Moq;
+using BAMTS.Internal;
 
 namespace Tester
 {
@@ -9,6 +11,8 @@ namespace Tester
         [TestMethod]
         public void TestMethod1()
         {
+            var mock = new Mock<IDataAccessor>();  // Mock生成
+            IDataAccessor port = mock.Object;  // IDataAccessorを継承したダミークラスを取得
         }
     }
 }

@@ -68,6 +68,31 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibCommon\LibCommon.csproj">
+      <Project>{322ee92e-edf4-46a4-8978-9aa71311e620}</Project>
+      <Name>LibCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibDatabaseAccess\LibDatabaseAccess.csproj">
+      <Project>{6ab088de-6879-44c5-a6c3-d5a95858f5f1}</Project>
+      <Name>LibDatabaseAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibModels\LibModels.csproj">
+      <Project>{b2e5ad2c-50b2-4c60-80a3-a7bacde3cc50}</Project>
+      <Name>LibModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibTextFileAccess\LibTextFileAccess.csproj">
+      <Project>{f3911cdb-2847-4843-a5ae-2cac2d47668a}</Project>
+      <Name>LibTextFileAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WinFormApp\WinFormApp.csproj">
+      <Project>{cc1a2217-892b-450c-83bb-a56f9e23ec4a}</Project>
+      <Name>WinFormApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HowToUseMOQ.txt" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

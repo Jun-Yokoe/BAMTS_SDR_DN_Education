@@ -12,7 +12,6 @@ C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\LibTextFileAcces
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\LibCommon.pdb
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\LibModels.pdb
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\LibTextFileAccess.pdb
-C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\WinFormApp.csproj.AssemblyReference.cache
 C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\WinFormApp.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\BAMTS.Internal.FDisplayListEmployee.resources
 C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\BAMTS.Internal.FMainMenu.resources
@@ -22,3 +21,4 @@ C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\BAMSS.Logging.Me
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\LibDatabaseAccess.pdb
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\BAMSS.Data.SQLServerAccessor.pdb
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\BAMSS.Logging.Message.LoggingMessageInterface.pdb
+C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\WinFormApp.csprojAssemblyReference.cache
