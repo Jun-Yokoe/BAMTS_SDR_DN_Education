@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibDatabaseAccess", "LibDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tester", "Tester\Tester.csproj", "{03119A56-3091-4B79-B800-B5CCB65F02B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIService", "WebAPIService\WebAPIService.csproj", "{6C86AE10-830C-489E-8FB4-99501C0C6A38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPIService.Tests", "WebAPIService.Tests\WebAPIService.Tests.csproj", "{167C06C7-FDA1-4A6F-B692-5CC7BEE277E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{03119A56-3091-4B79-B800-B5CCB65F02B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03119A56-3091-4B79-B800-B5CCB65F02B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03119A56-3091-4B79-B800-B5CCB65F02B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C86AE10-830C-489E-8FB4-99501C0C6A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C86AE10-830C-489E-8FB4-99501C0C6A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C86AE10-830C-489E-8FB4-99501C0C6A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C86AE10-830C-489E-8FB4-99501C0C6A38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{167C06C7-FDA1-4A6F-B692-5CC7BEE277E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{167C06C7-FDA1-4A6F-B692-5CC7BEE277E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{167C06C7-FDA1-4A6F-B692-5CC7BEE277E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{167C06C7-FDA1-4A6F-B692-5CC7BEE277E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
