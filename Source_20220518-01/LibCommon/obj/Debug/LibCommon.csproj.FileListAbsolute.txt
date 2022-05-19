@@ -1,9 +1,0 @@
-C:\User\Projects\Practice\Education\Source\LibCommon\bin\Debug\LibCommon.dll
-C:\User\Projects\Practice\Education\Source\LibCommon\bin\Debug\LibCommon.pdb
-C:\User\Projects\Practice\Education\Source\LibCommon\bin\Debug\LibModels.dll
-C:\User\Projects\Practice\Education\Source\LibCommon\bin\Debug\LibModels.pdb
-C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.csproj.AssemblyReference.cache
-C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.csproj.CoreCompileInputs.cache
-C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.csproj.CopyComplete
-C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.dll
-C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.pdb
