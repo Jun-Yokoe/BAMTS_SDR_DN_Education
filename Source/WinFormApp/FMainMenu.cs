@@ -30,5 +30,9 @@ namespace BAMTS.Internal
                 f.ShowDialog(this);
             }
         }
+        private void timDisplayTime_Tick(object sender, EventArgs e)
+        {
+            this.Text = $"BAMTS Internal System Menu ({DateTime.Now:yyyy/MM/dd HH:mm:ss})";
+        }
     }
 }

@@ -12,8 +12,8 @@ namespace BAMTS.Internal
 {
     public partial class FDisplayListEmployee : Form
     {
-        //private IDataAccessor _dataAccess = new TextFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data");
-        private IDataAccessor _dataAccess = new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou");
+        private IDataAccessor _dataAccess = new TextFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data");
+        //private IDataAccessor _dataAccess = new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou");
 
         public FDisplayListEmployee()
         {

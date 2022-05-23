@@ -29,8 +29,10 @@ namespace BAMTS.Internal
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCall_DisplayListEmployee = new System.Windows.Forms.Button();
             this.btnApplicationExit = new System.Windows.Forms.Button();
+            this.timDisplayTime = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnCall_DisplayListEmployee
@@ -57,6 +59,12 @@ namespace BAMTS.Internal
             this.btnApplicationExit.UseVisualStyleBackColor = true;
             this.btnApplicationExit.Click += new System.EventHandler(this.btnApplicationExit_Click);
             // 
+            // timDisplayTime
+            // 
+            this.timDisplayTime.Enabled = true;
+            this.timDisplayTime.Interval = 900;
+            this.timDisplayTime.Tick += new System.EventHandler(this.timDisplayTime_Tick);
+            // 
             // FMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -74,6 +82,7 @@ namespace BAMTS.Internal
 
         private System.Windows.Forms.Button btnCall_DisplayListEmployee;
         private System.Windows.Forms.Button btnApplicationExit;
+        private System.Windows.Forms.Timer timDisplayTime;
     }
 }
 

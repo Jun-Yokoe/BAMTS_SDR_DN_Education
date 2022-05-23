@@ -12,4 +12,4 @@ C:\User\Projects\Practice\Education\Source\LibDatabaseAccess\obj\Debug\LibDataba
 C:\User\Projects\Practice\Education\Source\LibDatabaseAccess\obj\Debug\LibDatabaseAccess.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\LibDatabaseAccess\obj\Debug\LibDatabaseAccess.dll
 C:\User\Projects\Practice\Education\Source\LibDatabaseAccess\obj\Debug\LibDatabaseAccess.pdb
-C:\User\Projects\Practice\Education\Source\LibDatabaseAccess\obj\Debug\LibDatabaseAccess.csprojAssemblyReference.cache
+C:\User\Projects\Practice\Education\Source\LibDatabaseAccess\obj\Debug\LibDatabaseAccess.csproj.AssemblyReference.cache

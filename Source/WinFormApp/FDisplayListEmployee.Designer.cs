@@ -33,7 +33,6 @@ namespace BAMTS.Internal
             this.btnFormExit = new System.Windows.Forms.Button();
             this.btnDisplayList = new System.Windows.Forms.Button();
             this.dgvList = new System.Windows.Forms.DataGridView();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.eMPIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMPNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bIRTHDATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@ namespace BAMTS.Internal
             this.pCMAILPASSWORDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nOTEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.recEmployeeAllBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recEmployeeAllBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,7 @@ namespace BAMTS.Internal
             this.btnFormExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFormExit.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFormExit.ForeColor = System.Drawing.Color.DarkGoldenrod;
-            this.btnFormExit.Location = new System.Drawing.Point(664, 391);
+            this.btnFormExit.Location = new System.Drawing.Point(1007, 663);
             this.btnFormExit.Name = "btnFormExit";
             this.btnFormExit.Size = new System.Drawing.Size(124, 47);
             this.btnFormExit.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace BAMTS.Internal
             this.btnDisplayList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDisplayList.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisplayList.ForeColor = System.Drawing.Color.Blue;
-            this.btnDisplayList.Location = new System.Drawing.Point(664, 12);
+            this.btnDisplayList.Location = new System.Drawing.Point(1007, 12);
             this.btnDisplayList.Name = "btnDisplayList";
             this.btnDisplayList.Size = new System.Drawing.Size(124, 47);
             this.btnDisplayList.TabIndex = 3;
@@ -101,21 +101,8 @@ namespace BAMTS.Internal
             this.dgvList.Name = "dgvList";
             this.dgvList.RowHeadersVisible = false;
             this.dgvList.RowTemplate.Height = 21;
-            this.dgvList.Size = new System.Drawing.Size(776, 320);
+            this.dgvList.Size = new System.Drawing.Size(1119, 592);
             this.dgvList.TabIndex = 4;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUpdate.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnUpdate.Location = new System.Drawing.Point(12, 391);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(124, 47);
-            this.btnUpdate.TabIndex = 5;
-            this.btnUpdate.Text = "更新";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // eMPIDDataGridViewTextBoxColumn
             // 
@@ -187,11 +174,24 @@ namespace BAMTS.Internal
             // 
             this.recEmployeeAllBindingSource.DataSource = typeof(BAMTS.Internal.RecEmployeeAll);
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnUpdate.Font = new System.Drawing.Font("MS Reference Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnUpdate.Location = new System.Drawing.Point(12, 663);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(124, 47);
+            this.btnUpdate.TabIndex = 5;
+            this.btnUpdate.Text = "更新";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
             // FDisplayListEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 722);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dgvList);
             this.Controls.Add(this.btnDisplayList);

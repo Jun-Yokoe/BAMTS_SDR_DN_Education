@@ -21,4 +21,4 @@ C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\BAMSS.Logging.Me
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\LibDatabaseAccess.pdb
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\BAMSS.Data.SQLServerAccessor.pdb
 C:\User\Projects\Practice\Education\Source\WinFormApp\bin\Debug\BAMSS.Logging.Message.LoggingMessageInterface.pdb
-C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\WinFormApp.csprojAssemblyReference.cache
+C:\User\Projects\Practice\Education\Source\WinFormApp\obj\Debug\WinFormApp.csproj.AssemblyReference.cache
