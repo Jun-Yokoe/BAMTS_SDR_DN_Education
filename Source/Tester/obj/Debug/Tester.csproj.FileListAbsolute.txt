@@ -33,8 +33,8 @@ C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\System.Runtime.Compi
 C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\BAMSS.Data.SQLServerAccessor.pdb
 C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\BAMSS.Logging.Message.LoggingMessageInterface.pdb
-C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.csprojAssemblyReference.cache
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.csproj.CoreCompileInputs.cache
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.dll
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.pdb
+C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.csproj.AssemblyReference.cache

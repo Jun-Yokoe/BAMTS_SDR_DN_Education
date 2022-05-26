@@ -1,0 +1,9 @@
+C:\User\Projects\Practice\Education\Source\WebAPIClient\bin\Debug\WebAPIClient.dll
+C:\User\Projects\Practice\Education\Source\WebAPIClient\bin\Debug\WebAPIClient.pdb
+C:\User\Projects\Practice\Education\Source\WebAPIClient\bin\Debug\Newtonsoft.Json.dll
+C:\User\Projects\Practice\Education\Source\WebAPIClient\bin\Debug\Newtonsoft.Json.xml
+C:\User\Projects\Practice\Education\Source\WebAPIClient\obj\Debug\WebAPIClient.csproj.AssemblyReference.cache
+C:\User\Projects\Practice\Education\Source\WebAPIClient\obj\Debug\WebAPIClient.csproj.CoreCompileInputs.cache
+C:\User\Projects\Practice\Education\Source\WebAPIClient\obj\Debug\WebAPIClient.csproj.CopyComplete
+C:\User\Projects\Practice\Education\Source\WebAPIClient\obj\Debug\WebAPIClient.dll
+C:\User\Projects\Practice\Education\Source\WebAPIClient\obj\Debug\WebAPIClient.pdb

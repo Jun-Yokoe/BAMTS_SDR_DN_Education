@@ -1,0 +1,172 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\User\\Projects\\Practice\\Education\\Source\\WPFPrismApp\\WPFPrismApp.csproj": {}
+  },
+  "projects": {
+    "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj",
+        "projectName": "LibCommon",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj",
+        "projectName": "LibDatabaseAccess",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj",
+        "projectName": "LibModels",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\User\\Projects\\Practice\\Education\\Source\\LibTextFileAccess\\LibTextFileAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\LibTextFileAccess\\LibTextFileAccess.csproj",
+        "projectName": "LibTextFileAccess",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibTextFileAccess\\LibTextFileAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\User\\Projects\\Practice\\Education\\Source\\WebAPIClient\\WebAPIClient.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\WebAPIClient\\WebAPIClient.csproj",
+        "projectName": "WebAPIClient",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\WebAPIClient\\WebAPIClient.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\User\\Projects\\Practice\\Education\\Source\\WPFPrismApp\\WPFPrismApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\WPFPrismApp\\WPFPrismApp.csproj",
+        "projectName": "WPFPrismApp",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\WPFPrismApp\\WPFPrismApp.csproj",
+        "packagesPath": "C:\\Users\\jun\\.nuget\\packages\\",
+        "outputPath": "C:\\User\\Projects\\Practice\\Education\\Source\\WPFPrismApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibTextFileAccess\\LibTextFileAccess.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibTextFileAccess\\LibTextFileAccess.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\WebAPIClient\\WebAPIClient.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\WebAPIClient\\WebAPIClient.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Prism.Unity": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -12,6 +12,9 @@ namespace BAMTS.Internal
 {
     public partial class FMainMenu : Form
     {
+        private EDataStrage _dataStrage = EDataStrage.Database;
+        //private string targetInfoText = @"C:\User\Projects\Practice\Education\Test\Data";
+        private string _targetInfoText = "Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou";
         public FMainMenu()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace BAMTS.Internal
         }
         private void btnCall_DisplayListEmployee_Click(object sender, EventArgs e)
         {
-            using (var f = new FDisplayListEmployee())
+            using (var f = new FDisplayListEmployee(this._dataStrage, this._targetInfoText))
             {
                 f.ShowDialog(this);
             }

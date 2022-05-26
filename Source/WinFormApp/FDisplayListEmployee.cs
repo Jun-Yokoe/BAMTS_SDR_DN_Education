@@ -12,15 +12,24 @@ namespace BAMTS.Internal
 {
     public partial class FDisplayListEmployee : Form
     {
-        private IDataAccessor _dataAccess = new TextFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data");
-        //private IDataAccessor _dataAccess = new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou");
-
-        public FDisplayListEmployee()
+        private IDataAccessor _dataAccess;
+        public FDisplayListEmployee(EDataStrage straageType, string targetInfoText)
         {
             InitializeComponent();
-        }
+            switch (straageType)
+            {
+                case EDataStrage.CSVFile:   //データストレージがCSVファイルの場合
+                    this._dataAccess = new TextFileAccessor(targetInfoText);
+                    break;
+                case EDataStrage.Database:  //データストレージがデータベースの場合
+                    this._dataAccess = new SQLServerAccessor(targetInfoText);
+                    break;
+                default:
+                    throw new ApplicationException("データタイプに認識できない値が設定されています。");
+            }
+    }
 
-        private void FDisplayListEmployee_Shown(object sender, EventArgs e)
+    private void FDisplayListEmployee_Shown(object sender, EventArgs e)
         {
             this.dgvList.DataSource = this._dataAccess.GetEmployeeAll();
         }
