@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="300" Width="500">
+        Title="{Binding Title}" Height="300" Width="835.912">
     <Grid>
         <DockPanel>
             <Grid>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="18"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="1*"/>
                     <RowDefinition Height="20"/>
                 </Grid.RowDefinitions>
@@ -29,15 +29,15 @@
                     </Menu>
                 </DockPanel>
                 <DockPanel Grid.Row="1" Grid.Column="0">
-                    <Button DockPanel.Dock="Top" x:Name="btnInformation" Content="Show Information" HorizontalContentAlignment="Left" Margin="1,1,1,1"/>
-                    <Button DockPanel.Dock="Top" x:Name="btnEmpList" Content="Employee List" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeList_Click}"/>
-                    <Button DockPanel.Dock="Bottom" x:Name="btnExit" Content="Exit" Margin="1,1,1,1" Command="{Binding ApplicationExitButton_Click}"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnInformation" Content="Show Information" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnEmpList" Content="Employee List" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeList_Click}"/>
+                    <Button DockPanel.Dock="Bottom" x:Name="btnExit" Content="Exit" Height="25" VerticalAlignment="Bottom" Margin="1,1,1,1" Command="{Binding ApplicationExitButton_Click}"/>
                 </DockPanel>
+                <GridSplitter Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" VerticalAlignment="Stretch" Width="3" Background="DarkGray"/>
                 <DockPanel Grid.Row="1" Grid.Column="1">
-                    <GridSplitter VerticalAlignment="Stretch" Width="3" Background="DarkGray"/>
-                    <ContentControl prism:RegionManager.RegionName="ContentRegion" Height="200"/>
+                    <ContentControl prism:RegionManager.RegionName="ContentRegion"/>
                 </DockPanel>
-                <DockPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                <DockPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Background="LightGray">
                     <StatusBar DockPanel.Dock="Right">
                         <StatusBarItem>
                             <TextBlock Text="{Binding CurrentTime, StringFormat=yyyy/MM/dd HH:mm:ss}" />

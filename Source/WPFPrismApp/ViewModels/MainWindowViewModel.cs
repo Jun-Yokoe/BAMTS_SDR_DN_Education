@@ -12,15 +12,12 @@ namespace BAMTS.Internal
     {
         public DelegateCommand ApplicationExitButton_Click { get; }
         public DelegateCommand DisplayEmployeeList_Click { get; }
+        public int TimerInterval { get; private set; }
         private Timer _timer;
         private DateTime _currentTime = DateTime.Now;
-        public int TimerInterval { get; private set; }
         private readonly IRegionManager _regionManager;
         private string _title = "Prism Application";
-        private void DisplayEmployeeListExecute()
-        {
-            this._regionManager.RequestNavigate("ContentRegion", nameof(UCEmployeeListViewModel));
-        }
+        private string _regionName = "ContentRegion";
         public string Title
         {
             get { return _title; }
@@ -30,8 +27,8 @@ namespace BAMTS.Internal
         {
             this.TimerInterval = 1000;
             this._regionManager = regionManager;
-            this.DisplayEmployeeList_Click = new DelegateCommand(this.DisplayEmployeeListExecute);
-            this.ApplicationExitButton_Click = new DelegateCommand(this.ShutdownApplication);
+            this.DisplayEmployeeList_Click = new DelegateCommand(this.DisplayEmployeeList_Execute);
+            this.ApplicationExitButton_Click = new DelegateCommand(this.ShutdownApplication_Execute);
         }
         public DateTime CurrentTime
         {
@@ -47,7 +44,11 @@ namespace BAMTS.Internal
             }
             private set { SetProperty(ref this._currentTime, value); }
         }
-        private void ShutdownApplication()
+        private void DisplayEmployeeList_Execute()
+        {
+            this._regionManager.RequestNavigate(this._regionName, nameof(UCEmployeeList));
+        }
+        private void ShutdownApplication_Execute()
         {
             Application.Current.Shutdown();
         }
