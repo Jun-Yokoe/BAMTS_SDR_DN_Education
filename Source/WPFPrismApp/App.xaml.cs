@@ -17,6 +17,7 @@ namespace BAMTS.Internal
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
             containerRegistry.RegisterForNavigation<BAMTS.Internal.UCEmployeeList>();
+            containerRegistry.RegisterForNavigation<BAMTS.Internal.UCGCEmployeeList>();
         }
     }
 }

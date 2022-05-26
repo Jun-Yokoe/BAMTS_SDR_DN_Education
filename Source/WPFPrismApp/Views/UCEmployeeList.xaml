@@ -9,14 +9,7 @@
                 Margin="10"
                 BorderBrush="#FF688CAF"
                 BorderThickness="1">
-                <DataGrid 
-                    x:Name="uxDataGrid" 
-                    HeadersVisibility="Column" 
-                    AlternatingRowBackground="Aqua" 
-                    CanUserAddRows="False" 
-                    AutoGenerateColumns="False" 
-                    ItemsSource="{Binding EmployeeList}" 
-                    Margin="10,36,10,10">
+                <DataGrid ItemsSource="{Binding EmployeeList}">
                 </DataGrid>
             </Border>
         </StackPanel>

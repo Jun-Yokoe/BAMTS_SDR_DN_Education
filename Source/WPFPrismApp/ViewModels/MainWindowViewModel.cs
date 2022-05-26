@@ -12,6 +12,7 @@ namespace BAMTS.Internal
     {
         public DelegateCommand ApplicationExitButton_Click { get; }
         public DelegateCommand DisplayEmployeeList_Click { get; }
+        public DelegateCommand DisplayEmployeeGCList_Click { get; }
         public int TimerInterval { get; private set; }
         private Timer _timer;
         private DateTime _currentTime = DateTime.Now;
@@ -28,6 +29,7 @@ namespace BAMTS.Internal
             this.TimerInterval = 1000;
             this._regionManager = regionManager;
             this.DisplayEmployeeList_Click = new DelegateCommand(this.DisplayEmployeeList_Execute);
+            this.DisplayEmployeeGCList_Click = new DelegateCommand(this.DisplayEmployeeGCList_Execute);
             this.ApplicationExitButton_Click = new DelegateCommand(this.ShutdownApplication_Execute);
         }
         public DateTime CurrentTime
@@ -47,6 +49,10 @@ namespace BAMTS.Internal
         private void DisplayEmployeeList_Execute()
         {
             this._regionManager.RequestNavigate(this._regionName, nameof(UCEmployeeList));
+        }
+        private void DisplayEmployeeGCList_Execute()
+        {
+            this._regionManager.RequestNavigate(this._regionName, nameof(UCGCEmployeeList));
         }
         private void ShutdownApplication_Execute()
         {

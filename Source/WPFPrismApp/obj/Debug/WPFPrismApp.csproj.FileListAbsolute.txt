@@ -44,3 +44,12 @@ C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\BAMSS.Data.SQLS
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\Newtonsoft.Json.xml
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\BAMSS.Logging.Message.LoggingMessageInterface.pdb
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\BAMTS.Internal.Properties.Resources.resources
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\GrapeCity.WPF.SpreadGrid.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\GrapeCity.WPF.CalcEngine.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\GrapeCity.WPF.Excel.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\GrapeCity.WPF.PDF.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\GrapeCity.WPF.SpreadGrid.xml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ja\GrapeCity.WPF.SpreadGrid.resources.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCGCEmployeeList.baml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCGCEmployeeList.g.cs
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\WPFPrismApp.exe.licenses

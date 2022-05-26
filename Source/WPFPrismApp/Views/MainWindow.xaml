@@ -1,7 +1,8 @@
-﻿<Window x:Class="BAMTS.Internal.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
+        xmlns:sg="http://schemas.grapecity.com/windows/spreadgrid/2012" x:Class="BAMTS.Internal.MainWindow"
         prism:ViewModelLocator.AutoWireViewModel="True"
         Title="{Binding Title}" Height="300" Width="835.912">
     <Grid>
@@ -18,19 +19,18 @@
                 </Grid.ColumnDefinitions>
                 <DockPanel Grid.RowSpan="1" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0" LastChildFill="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
                     <Menu Background="LightGray">
-                        <Menu.Items>
-                            <MenuItem Header="File" Name="File">
-                                <MenuItem Header="File" Name="Exit"/>
-                            </MenuItem>
-                            <MenuItem Header="Help" Name="Help">
-                                <MenuItem Header="File" Name="About"/>
-                            </MenuItem>
-                        </Menu.Items>
+                        <MenuItem Header="File" x:Name="File">
+                            <MenuItem Header="File" x:Name="Exit"/>
+                        </MenuItem>
+                        <MenuItem Header="Help" x:Name="Help">
+                            <MenuItem Header="File" x:Name="About"/>
+                        </MenuItem>
                     </Menu>
                 </DockPanel>
                 <DockPanel Grid.Row="1" Grid.Column="0">
-                    <Button DockPanel.Dock="Top" x:Name="btnInformation" Content="Show Information" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1"/>
-                    <Button DockPanel.Dock="Top" x:Name="btnEmpList" Content="Employee List" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeList_Click}"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnInformation" Content="Show Information" Height="25" HorizontalContentAlignment="Left" Margin="1,2,1,1"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnEmpList" Content="Employee List (Normal)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeList_Click}"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnEmpListGC" Content="Employee List (GrapeCity)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeGCList_Click}"/>
                     <Button DockPanel.Dock="Bottom" x:Name="btnExit" Content="Exit" Height="25" VerticalAlignment="Bottom" Margin="1,1,1,1" Command="{Binding ApplicationExitButton_Click}"/>
                 </DockPanel>
                 <GridSplitter Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" VerticalAlignment="Stretch" Width="3" Background="DarkGray"/>
