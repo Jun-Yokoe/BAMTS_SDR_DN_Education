@@ -52,3 +52,13 @@ C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\obj\Debug\WebAPIS
 C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\obj\Debug\WebAPIService.Tests.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\obj\Debug\WebAPIService.Tests.dll
 C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\obj\Debug\WebAPIService.Tests.pdb
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\LibCommon.dll
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\LibModels.dll
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\LibDatabaseAccess.dll
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\BAMSS.Data.SQLServerAccessor.dll
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\BAMSS.Logging.Message.LoggingMessageInterface.dll
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\LibCommon.pdb
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\LibModels.pdb
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\LibDatabaseAccess.pdb
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\BAMSS.Data.SQLServerAccessor.pdb
+C:\User\Projects\Practice\Education\Source\WebAPIService.Tests\bin\Debug\BAMSS.Logging.Message.LoggingMessageInterface.pdb

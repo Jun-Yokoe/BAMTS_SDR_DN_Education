@@ -2,16 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
+using System.Net;
+using System.Net.Http;
+using System.Web.Http;
+using BAMTS.Internal;
 
 namespace WebAPIService.Controllers
 {
-    public class DatabaseAccessController : Controller
+    public class DatabaseAccessController : ApiController 
     {
-        // GET: DatabaseAccess
-        public ActionResult Index()
+        private static string _TARGET_INFO_TEXT = "Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou";
+        private IDataAccessor _dataAccess = new SQLServerAccessor(DatabaseAccessController._TARGET_INFO_TEXT);
+        [HttpGet]
+        [Route("api/DatabaseAccessController/GetEmployeeAll")]
+        public IList<RecEmployeeAll> GetEmployeeAll()
         {
-            return View();
+            return this._dataAccess.GetEmployeeAll();
         }
     }
 }
