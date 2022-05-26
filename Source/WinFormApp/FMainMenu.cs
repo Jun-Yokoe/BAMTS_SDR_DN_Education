@@ -12,7 +12,7 @@ namespace BAMTS.Internal
 {
     public partial class FMainMenu : Form
     {
-        private EDataStrage _dataStrage = EDataStrage.Database;
+        private EDataStrage _dataStrage = EDataStrage.WebAPI;
         //private string targetInfoText = @"C:\User\Projects\Practice\Education\Test\Data";
         private string _targetInfoText = "Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou";
         public FMainMenu()

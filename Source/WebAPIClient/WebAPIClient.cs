@@ -7,7 +7,7 @@ using System.Net;
 using System.Net.Http;
 using Newtonsoft.Json;
 
-namespace BAMTS.Internal.WebAPI.Client
+namespace BAMTS.Internal
 {
     public abstract class WebAPIClient
     {

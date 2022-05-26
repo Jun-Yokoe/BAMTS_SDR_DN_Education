@@ -9,6 +9,7 @@ namespace BAMTS.Internal
     public enum EDataStrage
     {
         CSVFile = 0,
-        Database
+        Database,
+        WebAPI
     }
 }

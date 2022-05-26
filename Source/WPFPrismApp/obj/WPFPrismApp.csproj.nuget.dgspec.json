@@ -89,7 +89,14 @@
         "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\WebAPIClient\\WebAPIClient.csproj",
         "frameworks": {
           "net472": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"
+              }
+            }
           }
         }
       },

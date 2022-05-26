@@ -74,6 +74,7 @@ namespace BAMTS.Internal
             this.btnDisplayList.TabIndex = 3;
             this.btnDisplayList.Text = "表示";
             this.btnDisplayList.UseVisualStyleBackColor = true;
+            this.btnDisplayList.Click += new System.EventHandler(this.btnDisplayList_Click);
             // 
             // dgvList
             // 

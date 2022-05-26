@@ -107,6 +107,10 @@
       <Project>{f3911cdb-2847-4843-a5ae-2cac2d47668a}</Project>
       <Name>LibTextFileAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebAPIClient\WebAPIClient.csproj">
+      <Project>{20b58876-e798-4d36-971e-874fca3a0589}</Project>
+      <Name>WebAPIClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

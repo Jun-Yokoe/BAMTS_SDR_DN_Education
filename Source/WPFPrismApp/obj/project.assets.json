@@ -153,6 +153,10 @@
       },
       "WebAPIClient/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebAPIClient.dll": {}
         },
@@ -313,6 +317,10 @@
       },
       "WebAPIClient/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebAPIClient.dll": {}
         },
@@ -473,6 +481,10 @@
       },
       "WebAPIClient/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebAPIClient.dll": {}
         },
@@ -633,6 +645,10 @@
       },
       "WebAPIClient/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/WebAPIClient.dll": {}
         },

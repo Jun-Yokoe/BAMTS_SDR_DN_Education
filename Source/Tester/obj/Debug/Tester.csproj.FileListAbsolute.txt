@@ -38,3 +38,7 @@ C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.csproj.CopyCo
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.dll
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.pdb
 C:\User\Projects\Practice\Education\Source\Tester\obj\Debug\Tester.csproj.AssemblyReference.cache
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\WebAPIClient.dll
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\Newtonsoft.Json.dll
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\WebAPIClient.pdb
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\Newtonsoft.Json.xml

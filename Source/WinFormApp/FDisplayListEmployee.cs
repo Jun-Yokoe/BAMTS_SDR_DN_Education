@@ -24,6 +24,9 @@ namespace BAMTS.Internal
                 case EDataStrage.Database:  //データストレージがデータベースの場合
                     this._dataAccess = new SQLServerAccessor(targetInfoText);
                     break;
+                case EDataStrage.WebAPI:  //データストレージがWebAPIの場合
+                    this._dataAccess = new WebAPIDatabaseAccessor("192.168.1.12", 1486, "DatabaseAccessController");
+                    break;
                 default:
                     throw new ApplicationException("データタイプに認識できない値が設定されています。");
             }
@@ -50,6 +53,10 @@ namespace BAMTS.Internal
             {
                 MessageBox.Show($"更新処理にて異常が発生しました。({ex.Message})", "更新結果", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+        }
+        private void btnDisplayList_Click(object sender, EventArgs e)
+        {
+            this.dgvList.DataSource = this._dataAccess.GetEmployeeAll();
         }
     }
 }
