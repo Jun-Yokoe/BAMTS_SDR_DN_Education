@@ -25,7 +25,7 @@ namespace BAMTS.Internal
                     this._dataAccess = new SQLServerAccessor(targetInfoText);
                     break;
                 case EDataStrage.WebAPI:  //データストレージがWebAPIの場合
-                    this._dataAccess = new WebAPIDatabaseAccessor("192.168.1.12", 1486, "DatabaseAccessController");
+                    this._dataAccess = new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController");
                     break;
                 default:
                     throw new ApplicationException("データタイプに認識できない値が設定されています。");

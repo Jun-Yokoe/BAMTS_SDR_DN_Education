@@ -1,0 +1,12 @@
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\bin\Debug\netstandard2.0\XamarinPrismApp.deps.json
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\bin\Debug\netstandard2.0\XamarinPrismApp.dll
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\bin\Debug\netstandard2.0\XamarinPrismApp.pdb
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.AssemblyInfoInputs.cache
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.AssemblyInfo.cs
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.csproj.CoreCompileInputs.cache
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.dll
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.pdb
