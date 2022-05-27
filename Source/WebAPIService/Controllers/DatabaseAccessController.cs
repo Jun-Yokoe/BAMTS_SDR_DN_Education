@@ -15,9 +15,9 @@ namespace WebAPIService.Controllers
         private IDataAccessor _dataAccess = new SQLServerAccessor(DatabaseAccessController._TARGET_INFO_TEXT);
         [HttpGet]
         [Route("api/DatabaseAccessController/GetEmployeeAll")]
-        public IList<RecEmployeeAll> GetEmployeeAll()
-        {
-            return this._dataAccess.GetEmployeeAll();
-        }
+        public IList<RecEmployeeAll> GetEmployeeAll() => this._dataAccess.GetEmployeeAll();
+        [HttpPost]
+        [Route("api/DatabaseAccessController/UpdateEmployeeAll")]
+        public void UpdateEmployeeAll(IList<RecEmployeeAll> list) => this._dataAccess.UpdateEmployeeAll(list);
     }
 }

@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IWebAPIResult.cs" />
     <Compile Include="EDataStrage.cs" />
-    <Compile Include="IDataAccess.cs" />
+    <Compile Include="IDataAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

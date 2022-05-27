@@ -37,7 +37,18 @@ namespace BAMTS.Internal
         }
         public void UpdateEmployeeAll(IList<RecEmployeeAll> list)
         {
-            //throw new NotImplementedException();
+            using (HttpClient client = new HttpClient())
+            {
+                var jsonString = JsonConvert.SerializeObject(list);
+                var content = new StringContent(jsonString, Encoding.UTF8, @"application/json");
+                using (var response = client.PostAsync($"{this.URIBase}/UpdateEmployeeAll", content).GetAwaiter().GetResult())
+                {
+                    if (response.IsSuccessStatusCode == false)
+                    {
+                        throw new Exception(response.ReasonPhrase);
+                    }
+                }
+            }
         }
     }
 }

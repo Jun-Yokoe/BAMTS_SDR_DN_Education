@@ -8,3 +8,4 @@ C:\User\Projects\Practice\Education\Source\LibModels\obj\Release\LibModels.cspro
 C:\User\Projects\Practice\Education\Source\LibModels\obj\Release\LibModels.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\LibModels\obj\Release\LibModels.dll
 C:\User\Projects\Practice\Education\Source\LibModels\obj\Release\LibModels.pdb
+C:\User\Projects\Practice\Education\Source\LibModels\obj\Release\LibModels.csproj.AssemblyReference.cache

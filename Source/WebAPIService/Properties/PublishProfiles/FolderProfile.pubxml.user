@@ -5,6 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>\\BAMTS-ISFSERV01\BAMTS_WebAPI</_PublishTargetUrl>
+    <History>True|2022-05-27T01:31:59.7907129Z;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="Areas/HelpPage/HelpPage.css">
@@ -119,22 +120,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/29/2018 22:30:00</publishTime>
     </File>
     <File Include="bin/LibCommon.dll">
-      <publishTime>05/26/2022 19:05:28</publishTime>
+      <publishTime>05/27/2022 10:31:55</publishTime>
     </File>
     <File Include="bin/LibCommon.pdb">
-      <publishTime>05/26/2022 19:05:28</publishTime>
+      <publishTime>05/27/2022 10:31:55</publishTime>
     </File>
     <File Include="bin/LibDatabaseAccess.dll">
-      <publishTime>05/26/2022 19:05:28</publishTime>
+      <publishTime>05/27/2022 10:31:55</publishTime>
     </File>
     <File Include="bin/LibDatabaseAccess.pdb">
-      <publishTime>05/26/2022 19:05:28</publishTime>
+      <publishTime>05/27/2022 10:31:55</publishTime>
     </File>
     <File Include="bin/LibModels.dll">
-      <publishTime>05/26/2022 19:05:28</publishTime>
+      <publishTime>05/27/2022 10:31:55</publishTime>
     </File>
     <File Include="bin/LibModels.pdb">
-      <publishTime>05/26/2022 19:05:28</publishTime>
+      <publishTime>05/27/2022 10:31:55</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>09/05/2018 16:10:50</publishTime>
@@ -323,10 +324,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/28/2018 13:04:24</publishTime>
     </File>
     <File Include="bin/WebAPIService.dll">
-      <publishTime>05/26/2022 19:05:29</publishTime>
+      <publishTime>05/27/2022 10:31:56</publishTime>
     </File>
     <File Include="bin/WebAPIService.pdb">
-      <publishTime>05/26/2022 19:05:29</publishTime>
+      <publishTime>05/27/2022 10:31:56</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
       <publishTime>01/23/2014 13:57:34</publishTime>

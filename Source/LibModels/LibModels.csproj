@@ -31,7 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BAMSS.Data.SQLServerAccessor">
+    <Reference Include="BAMSS.Data.SQLServerAccessor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Bamss\Common\BAMSS\Data\BAMSS.Data.SQLServerAccessor\bin\Debug\BAMSS.Data.SQLServerAccessor.dll</HintPath>
     </Reference>
     <Reference Include="System" />

@@ -6,12 +6,8 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <StackPanel>
-            <Border
-                Margin="10"
-                BorderBrush="#FF688CAF"
-                BorderThickness="1">
-                <sg:GcSpreadGrid x:Name="gcgList" ItemsSource="{Binding EmployeeList}">
-                </sg:GcSpreadGrid>
+            <Border Margin="10" BorderBrush="#FF688CAF" BorderThickness="1">
+                <sg:GcSpreadGrid x:Name="gcgList" ItemsSource="{Binding EmployeeList}" />
             </Border>
         </StackPanel>
     </Grid>
