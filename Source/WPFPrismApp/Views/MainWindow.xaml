@@ -29,8 +29,8 @@
                 </DockPanel>
                 <DockPanel Grid.Row="1" Grid.Column="0">
                     <Button DockPanel.Dock="Top" x:Name="btnInformation" Content="Show Information" Height="25" HorizontalContentAlignment="Left" Margin="1,2,1,1"/>
-                    <Button DockPanel.Dock="Top" x:Name="btnEmpList" Content="Employee List (Normal)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeList_Click}"/>
-                    <Button DockPanel.Dock="Top" x:Name="btnEmpListGC" Content="Employee List (GrapeCity)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeGCList_Click}"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnEmpList" Content="Employee List (MSGrid)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeList_Click}"/>
+                    <Button DockPanel.Dock="Top" x:Name="btnEmpListGC" Content="Employee List (GCGrid)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,1,1" Command="{Binding DisplayEmployeeGCList_Click}"/>
                     <Button DockPanel.Dock="Bottom" x:Name="btnExit" Content="Exit" Height="25" VerticalAlignment="Bottom" Margin="1,1,1,1" Command="{Binding ApplicationExitButton_Click}"/>
                 </DockPanel>
                 <GridSplitter Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" VerticalAlignment="Stretch" Width="3" Background="DarkGray"/>

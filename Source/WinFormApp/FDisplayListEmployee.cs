@@ -22,12 +22,10 @@ namespace BAMTS.Internal
         {
             this.dgvList.DataSource = this._dataAccessor.GetEmployeeAll();
         }
-
         private void btnFormExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try

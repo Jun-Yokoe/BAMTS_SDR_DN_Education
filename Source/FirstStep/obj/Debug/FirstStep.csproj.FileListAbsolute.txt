@@ -1,0 +1,10 @@
+C:\User\Projects\Practice\Education\Source\FirstStep\bin\Debug\FirstStep.exe.config
+C:\User\Projects\Practice\Education\Source\FirstStep\bin\Debug\FirstStep.exe
+C:\User\Projects\Practice\Education\Source\FirstStep\bin\Debug\FirstStep.pdb
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.csproj.AssemblyReference.cache
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.Properties.Resources.resources
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.csproj.GenerateResource.cache
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.csproj.CoreCompileInputs.cache
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.exe
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.pdb
+C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.FProgram1stStep.resources

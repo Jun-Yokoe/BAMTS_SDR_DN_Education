@@ -18,7 +18,7 @@ namespace BAMTS.Internal
             using (var workbook = new XLWorkbook(this._targetFilePath))
             {
                 var worksheet = workbook.Worksheet(this._targetSheetName);
-                int row = 2;
+                int row = 2;    //行番号1はヘッダレコードなのでスキップ
                 bool endOfRow = false;
                 while (endOfRow == false)
                 {
