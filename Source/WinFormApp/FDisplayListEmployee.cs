@@ -12,29 +12,15 @@ namespace BAMTS.Internal
 {
     public partial class FDisplayListEmployee : Form
     {
-        private IDataAccessor _dataAccess;
-        public FDisplayListEmployee(EDataStrage straageType, string targetInfoText)
+        private IDataAccessor _dataAccessor;
+        public FDisplayListEmployee(IDataAccessor dataAccessor)
         {
             InitializeComponent();
-            switch (straageType)
-            {
-                case EDataStrage.CSVFile:   //データストレージがCSVファイルの場合
-                    this._dataAccess = new TextFileAccessor(targetInfoText);
-                    break;
-                case EDataStrage.Database:  //データストレージがデータベースの場合
-                    this._dataAccess = new SQLServerAccessor(targetInfoText);
-                    break;
-                case EDataStrage.WebAPI:  //データストレージがWebAPIの場合
-                    this._dataAccess = new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController");
-                    break;
-                default:
-                    throw new ApplicationException("データタイプに認識できない値が設定されています。");
-            }
-    }
-
-    private void FDisplayListEmployee_Shown(object sender, EventArgs e)
+            this._dataAccessor = dataAccessor;
+        }
+        private void FDisplayListEmployee_Shown(object sender, EventArgs e)
         {
-            this.dgvList.DataSource = this._dataAccess.GetEmployeeAll();
+            this.dgvList.DataSource = this._dataAccessor.GetEmployeeAll();
         }
 
         private void btnFormExit_Click(object sender, EventArgs e)
@@ -46,7 +32,7 @@ namespace BAMTS.Internal
         {
             try
             {
-                this._dataAccess.UpdateEmployeeAll(this.dgvList.DataSource as IList<RecEmployeeAll>);
+                this._dataAccessor.UpdateEmployeeAll(this.dgvList.DataSource as IList<RecEmployeeAll>);
                 MessageBox.Show("更新が正常に完了しました。", "更新結果", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -56,7 +42,7 @@ namespace BAMTS.Internal
         }
         private void btnDisplayList_Click(object sender, EventArgs e)
         {
-            this.dgvList.DataSource = this._dataAccess.GetEmployeeAll();
+            this.dgvList.DataSource = this._dataAccessor.GetEmployeeAll();
         }
     }
 }

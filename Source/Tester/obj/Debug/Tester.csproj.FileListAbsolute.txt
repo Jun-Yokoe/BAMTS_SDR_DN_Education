@@ -42,3 +42,12 @@ C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\WebAPIClient.dll
 C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\Newtonsoft.Json.dll
 C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\WebAPIClient.pdb
 C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\Newtonsoft.Json.xml
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\LibExcelAccess.dll
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\ClosedXML.dll
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\DocumentFormat.OpenXml.dll
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\ExcelNumberFormat.dll
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\LibExcelAccess.pdb
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\ClosedXML.pdb
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\ClosedXML.xml
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\DocumentFormat.OpenXml.xml
+C:\User\Projects\Practice\Education\Source\Tester\bin\Debug\ExcelNumberFormat.xml

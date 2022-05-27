@@ -10,6 +10,7 @@ namespace BAMTS.Internal
     {
         CSVFile = 0,
         Database,
-        WebAPI
+        WebAPI,
+        Excel
     }
 }

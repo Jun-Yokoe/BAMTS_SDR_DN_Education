@@ -12,9 +12,6 @@ namespace BAMTS.Internal
 {
     public partial class FMainMenu : Form
     {
-        private EDataStrage _dataStrage = EDataStrage.WebAPI;
-        //private string targetInfoText = @"C:\User\Projects\Practice\Education\Test\Data";
-        private string _targetInfoText = "Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou";
         public FMainMenu()
         {
             InitializeComponent();
@@ -22,20 +19,16 @@ namespace BAMTS.Internal
         private void btnApplicationExit_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("アプリケーションを終了しても宜しいですか？", "終了確認", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-            {
                 Application.Exit();
-            }
         }
-        private void btnCall_DisplayListEmployee_Click(object sender, EventArgs e)
+        private void ShowEmployeeList(IDataAccessor dataAccessor)
         {
-            using (var f = new FDisplayListEmployee(this._dataStrage, this._targetInfoText))
-            {
-                f.ShowDialog(this);
-            }
+            using (var f = new FDisplayListEmployee(dataAccessor)){ f.ShowDialog(this); }
         }
-        private void timDisplayTime_Tick(object sender, EventArgs e)
-        {
-            this.Text = $"BAMTS Internal System Menu ({DateTime.Now:yyyy/MM/dd HH:mm:ss})";
-        }
+        private void timDisplayTime_Tick(object sender, EventArgs e) => this.Text = $"BAMTS Internal System Menu ({DateTime.Now:yyyy/MM/dd HH:mm:ss})";
+        private void btnListEmployeeCSV_Click(object sender, EventArgs e) => this.ShowEmployeeList(new CSVFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.CSV"));
+        private void btnListEmployeeSqlDB_Click(object sender, EventArgs e) => this.ShowEmployeeList(new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou"));
+        private void btnListEmployeeWebAPI_Click(object sender, EventArgs e) => this.ShowEmployeeList(new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController"));
+        private void btnListEmployeeExcel_Click(object sender, EventArgs e) => this.ShowEmployeeList(new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
     }
 }
