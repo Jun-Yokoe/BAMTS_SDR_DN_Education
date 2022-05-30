@@ -1,17 +1,23 @@
-﻿<UserControl x:Class="BAMTS.Internal.UCGCEmployeeList"
+﻿<UserControl
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"
              xmlns:sg="http://schemas.grapecity.com/windows/spreadgrid/2012"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="BAMTS.Internal.UCGCEmployeeList"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel>
-            <StackPanel>
-                <Button x:Name="btnDisplay" Content="表示" />
-            </StackPanel>
-            <StackPanel>
-                <sg:GcSpreadGrid x:Name="gcgList" ItemsSource="{Binding EmployeeList}" />
-            </StackPanel>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnDisplay" Content="表示" Width="100" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="2" Command="{Binding DisplayEmployeeList_Click}"/>
+        <sg:GcSpreadGrid x:Name="gcgList" ItemsSource="{Binding EmployeeList}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
+        <Button x:Name="btnUpdate" Content="更新" Width="100" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" Command="{Binding UpdateEmployeeList_Click}"/>
     </Grid>
 </UserControl>

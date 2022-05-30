@@ -4,5 +4,8 @@ using System.Collections.Generic;
 
 namespace BAMTS.Internal
 {
-    public class UCGCEmployeeListViewModel : UCEmployeeListViewModel { }
+    public class UCGCEmployeeListViewModel : UCEmployeeListViewModel 
+    {
+        public UCGCEmployeeListViewModel() : base() { }
+    }
 }
