@@ -10,10 +10,11 @@ namespace BAMTS.Internal
 {
     public class CSVFileAccessor : IDataAccessor
     {
+        private string _delimiter = ",";
         private string _targetFilePath;
         private Encoding _fileEncording = Encoding.GetEncoding("utf-8");
 
-        public CSVFileAccessor(string targetFilePath)
+        public CSVFileAccessor(string targetFilePath, string delimiter = ",")
         {
             this._targetFilePath = targetFilePath;
         }
@@ -23,7 +24,7 @@ namespace BAMTS.Internal
             var res = new List<RecEmployeeAll>();
             using (var parser = new TextFieldParser(this._targetFilePath, this._fileEncording))
             {
-                parser.Delimiters = new string[] { "," };
+                parser.Delimiters = new string[] { this._delimiter };
                 if (headerExist) parser.ReadFields();   //ヘッダが存在する場合は、ヘッダレコードを空読み
                 while (!parser.EndOfData) 
                 { 

@@ -78,7 +78,7 @@ namespace FirstStep
             this.txtName.Location = new System.Drawing.Point(198, 262);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(332, 43);
+            this.txtName.Size = new System.Drawing.Size(332, 31);
             this.txtName.TabIndex = 2;
             // 
             // timDisplayTime
@@ -93,7 +93,7 @@ namespace FirstStep
             this.rdbBlue.Location = new System.Drawing.Point(31, 62);
             this.rdbBlue.Margin = new System.Windows.Forms.Padding(5);
             this.rdbBlue.Name = "rdbBlue";
-            this.rdbBlue.Size = new System.Drawing.Size(112, 40);
+            this.rdbBlue.Size = new System.Drawing.Size(76, 28);
             this.rdbBlue.TabIndex = 3;
             this.rdbBlue.TabStop = true;
             this.rdbBlue.Text = "Blue";
@@ -106,7 +106,7 @@ namespace FirstStep
             this.cbxAnonymous.Location = new System.Drawing.Point(32, 201);
             this.cbxAnonymous.Margin = new System.Windows.Forms.Padding(5);
             this.cbxAnonymous.Name = "cbxAnonymous";
-            this.cbxAnonymous.Size = new System.Drawing.Size(185, 40);
+            this.cbxAnonymous.Size = new System.Drawing.Size(125, 28);
             this.cbxAnonymous.TabIndex = 4;
             this.cbxAnonymous.Text = "匿名希望";
             this.cbxAnonymous.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@ namespace FirstStep
             this.cbbWorkingPlace.Location = new System.Drawing.Point(198, 121);
             this.cbbWorkingPlace.Margin = new System.Windows.Forms.Padding(5);
             this.cbbWorkingPlace.Name = "cbbWorkingPlace";
-            this.cbbWorkingPlace.Size = new System.Drawing.Size(332, 44);
+            this.cbbWorkingPlace.Size = new System.Drawing.Size(332, 32);
             this.cbbWorkingPlace.TabIndex = 5;
             // 
             // gbxColor
@@ -148,7 +148,7 @@ namespace FirstStep
             this.rdbGreen.Location = new System.Drawing.Point(415, 62);
             this.rdbGreen.Margin = new System.Windows.Forms.Padding(5);
             this.rdbGreen.Name = "rdbGreen";
-            this.rdbGreen.Size = new System.Drawing.Size(130, 40);
+            this.rdbGreen.Size = new System.Drawing.Size(88, 28);
             this.rdbGreen.TabIndex = 6;
             this.rdbGreen.TabStop = true;
             this.rdbGreen.Text = "Green";
@@ -162,7 +162,7 @@ namespace FirstStep
             this.rdbYellow.Location = new System.Drawing.Point(257, 62);
             this.rdbYellow.Margin = new System.Windows.Forms.Padding(5);
             this.rdbYellow.Name = "rdbYellow";
-            this.rdbYellow.Size = new System.Drawing.Size(148, 40);
+            this.rdbYellow.Size = new System.Drawing.Size(100, 28);
             this.rdbYellow.TabIndex = 5;
             this.rdbYellow.TabStop = true;
             this.rdbYellow.Text = "Yellow";
@@ -176,7 +176,7 @@ namespace FirstStep
             this.rdbRed.Location = new System.Drawing.Point(153, 62);
             this.rdbRed.Margin = new System.Windows.Forms.Padding(5);
             this.rdbRed.Name = "rdbRed";
-            this.rdbRed.Size = new System.Drawing.Size(94, 40);
+            this.rdbRed.Size = new System.Drawing.Size(64, 28);
             this.rdbRed.TabIndex = 4;
             this.rdbRed.TabStop = true;
             this.rdbRed.Text = "Red";
@@ -188,7 +188,7 @@ namespace FirstStep
             this.dtpEntryDate.Font = new System.Drawing.Font("ＭＳ ゴシック", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dtpEntryDate.Location = new System.Drawing.Point(198, 60);
             this.dtpEntryDate.Name = "dtpEntryDate";
-            this.dtpEntryDate.Size = new System.Drawing.Size(332, 43);
+            this.dtpEntryDate.Size = new System.Drawing.Size(332, 31);
             this.dtpEntryDate.TabIndex = 7;
             // 
             // lblEntryDateTitle
@@ -196,10 +196,10 @@ namespace FirstStep
             this.lblEntryDateTitle.BackColor = System.Drawing.SystemColors.Control;
             this.lblEntryDateTitle.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEntryDateTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblEntryDateTitle.Location = new System.Drawing.Point(25, 58);
+            this.lblEntryDateTitle.Location = new System.Drawing.Point(27, 62);
             this.lblEntryDateTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEntryDateTitle.Name = "lblEntryDateTitle";
-            this.lblEntryDateTitle.Size = new System.Drawing.Size(155, 50);
+            this.lblEntryDateTitle.Size = new System.Drawing.Size(155, 33);
             this.lblEntryDateTitle.TabIndex = 8;
             this.lblEntryDateTitle.Text = "登録日";
             this.lblEntryDateTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -209,10 +209,10 @@ namespace FirstStep
             this.lblWorkingPlaceTitle.BackColor = System.Drawing.SystemColors.Control;
             this.lblWorkingPlaceTitle.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWorkingPlaceTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblWorkingPlaceTitle.Location = new System.Drawing.Point(25, 117);
+            this.lblWorkingPlaceTitle.Location = new System.Drawing.Point(25, 119);
             this.lblWorkingPlaceTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblWorkingPlaceTitle.Name = "lblWorkingPlaceTitle";
-            this.lblWorkingPlaceTitle.Size = new System.Drawing.Size(166, 50);
+            this.lblWorkingPlaceTitle.Size = new System.Drawing.Size(166, 36);
             this.lblWorkingPlaceTitle.TabIndex = 9;
             this.lblWorkingPlaceTitle.Text = "勤務地";
             this.lblWorkingPlaceTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,10 +245,10 @@ namespace FirstStep
             this.lblWeightUnit.BackColor = System.Drawing.SystemColors.Control;
             this.lblWeightUnit.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWeightUnit.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblWeightUnit.Location = new System.Drawing.Point(879, 258);
+            this.lblWeightUnit.Location = new System.Drawing.Point(811, 264);
             this.lblWeightUnit.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblWeightUnit.Name = "lblWeightUnit";
-            this.lblWeightUnit.Size = new System.Drawing.Size(59, 50);
+            this.lblWeightUnit.Size = new System.Drawing.Size(59, 27);
             this.lblWeightUnit.TabIndex = 14;
             this.lblWeightUnit.Text = "Kg";
             this.lblWeightUnit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,9 +256,9 @@ namespace FirstStep
             // nudWeight
             // 
             this.nudWeight.DecimalPlaces = 2;
-            this.nudWeight.Location = new System.Drawing.Point(693, 263);
+            this.nudWeight.Location = new System.Drawing.Point(623, 262);
             this.nudWeight.Name = "nudWeight";
-            this.nudWeight.Size = new System.Drawing.Size(180, 43);
+            this.nudWeight.Size = new System.Drawing.Size(180, 31);
             this.nudWeight.TabIndex = 13;
             this.nudWeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -267,10 +267,10 @@ namespace FirstStep
             this.lblWeightTitle.BackColor = System.Drawing.SystemColors.Control;
             this.lblWeightTitle.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWeightTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblWeightTitle.Location = new System.Drawing.Point(594, 258);
+            this.lblWeightTitle.Location = new System.Drawing.Point(557, 262);
             this.lblWeightTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblWeightTitle.Name = "lblWeightTitle";
-            this.lblWeightTitle.Size = new System.Drawing.Size(91, 50);
+            this.lblWeightTitle.Size = new System.Drawing.Size(58, 31);
             this.lblWeightTitle.TabIndex = 12;
             this.lblWeightTitle.Text = "体重";
             this.lblWeightTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -295,10 +295,10 @@ namespace FirstStep
             this.lblNameTitle.BackColor = System.Drawing.SystemColors.Control;
             this.lblNameTitle.Font = new System.Drawing.Font("Berlin Sans FB", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNameTitle.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblNameTitle.Location = new System.Drawing.Point(25, 258);
+            this.lblNameTitle.Location = new System.Drawing.Point(27, 263);
             this.lblNameTitle.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblNameTitle.Name = "lblNameTitle";
-            this.lblNameTitle.Size = new System.Drawing.Size(114, 50);
+            this.lblNameTitle.Size = new System.Drawing.Size(114, 30);
             this.lblNameTitle.TabIndex = 10;
             this.lblNameTitle.Text = "氏名";
             this.lblNameTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,10 +335,10 @@ namespace FirstStep
             this.btnHensuu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHensuu.Font = new System.Drawing.Font("ＭＳ ゴシック", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.btnHensuu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnHensuu.Location = new System.Drawing.Point(3, 39);
+            this.btnHensuu.Location = new System.Drawing.Point(3, 27);
             this.btnHensuu.Margin = new System.Windows.Forms.Padding(5);
             this.btnHensuu.Name = "btnHensuu";
-            this.btnHensuu.Size = new System.Drawing.Size(1446, 131);
+            this.btnHensuu.Size = new System.Drawing.Size(1446, 143);
             this.btnHensuu.TabIndex = 11;
             this.btnHensuu.Text = "変数について";
             this.btnHensuu.UseVisualStyleBackColor = false;
@@ -346,7 +346,7 @@ namespace FirstStep
             // 
             // FProgram1stStep
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1452, 1205);
             this.Controls.Add(this.gpbHensuu);

@@ -1,5 +1,8 @@
 ﻿using ClosedXML.Excel;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Reflection;
 
 namespace BAMTS.Internal
 {
@@ -40,6 +43,28 @@ namespace BAMTS.Internal
         }
         public void UpdateEmployeeAll(IList<RecEmployeeAll> list)
         {
+            using (var workbook = new XLWorkbook(this._targetFilePath))
+            {
+                var worksheet = workbook.Worksheet(this._targetSheetName);
+                worksheet.CellsUsed().Clear(XLClearOptions.Contents);
+                int row = 1;    //ヘッダレコード
+                int col = 1;
+                foreach (var prop in typeof(RecEmployeeAll).GetProperties())
+                {
+                    worksheet.Cell(row, col++).Value = prop.GetCustomAttribute<DisplayNameAttribute>().DisplayName;
+                }
+                row++;
+                foreach (var rec in list)
+                {   //データレコード
+                    col = 1;
+                    foreach (var prop in typeof(RecEmployeeAll).GetProperties())
+                    {
+                        worksheet.Cell(row, col++).Value = typeof(RecEmployeeAll).GetProperty(prop.Name).GetValue(rec);
+                    }
+                    row++;
+                }
+                workbook.Save();
+            }
         }
     }
 }
