@@ -45,6 +45,28 @@
         "net472": {}
       }
     },
+    "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj",
+        "projectName": "LibExcelAccess",
+        "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibCommon\\LibCommon.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
       "restore": {
         "projectUniqueName": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj",
@@ -139,6 +161,9 @@
               },
               "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj": {
                 "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj"
+              },
+              "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj": {
+                "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj"
               },
               "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
                 "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"

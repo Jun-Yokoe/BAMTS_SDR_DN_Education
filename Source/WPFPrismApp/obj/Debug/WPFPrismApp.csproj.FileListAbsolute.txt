@@ -25,8 +25,6 @@ C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\WPFPrismApp.csp
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\WPFPrismApp.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\WPFPrismApp.exe
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\WPFPrismApp.pdb
-C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCEmployeeList.baml
-C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCEmployeeList.g.cs
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\LibCommon.dll
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\LibDatabaseAccess.dll
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\LibTextFileAccess.dll
@@ -53,3 +51,14 @@ C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ja\GrapeCity.WP
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCGCEmployeeList.baml
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCGCEmployeeList.g.cs
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\WPFPrismApp.exe.licenses
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\LibExcelAccess.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ClosedXML.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\DocumentFormat.OpenXml.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ExcelNumberFormat.dll
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\LibExcelAccess.pdb
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ClosedXML.pdb
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ClosedXML.xml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\DocumentFormat.OpenXml.xml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ExcelNumberFormat.xml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCMSEmployeeList.baml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCMSEmployeeList.g.cs

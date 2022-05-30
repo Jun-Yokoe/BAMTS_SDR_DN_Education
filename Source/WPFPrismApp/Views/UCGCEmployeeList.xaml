@@ -6,9 +6,12 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <StackPanel>
-            <Border Margin="10" BorderBrush="#FF688CAF" BorderThickness="1">
+            <StackPanel>
+                <Button x:Name="btnDisplay" Content="表示" />
+            </StackPanel>
+            <StackPanel>
                 <sg:GcSpreadGrid x:Name="gcgList" ItemsSource="{Binding EmployeeList}" />
-            </Border>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>

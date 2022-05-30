@@ -129,6 +129,19 @@
           "bin/placeholder/LibDatabaseAccess.dll": {}
         }
       },
+      "LibExcelAccess/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibExcelAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibExcelAccess.dll": {}
+        }
+      },
       "LibModels/1.0.0": {
         "type": "project",
         "compile": {
@@ -291,6 +304,19 @@
         },
         "runtime": {
           "bin/placeholder/LibDatabaseAccess.dll": {}
+        }
+      },
+      "LibExcelAccess/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibExcelAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibExcelAccess.dll": {}
         }
       },
       "LibModels/1.0.0": {
@@ -457,6 +483,19 @@
           "bin/placeholder/LibDatabaseAccess.dll": {}
         }
       },
+      "LibExcelAccess/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibExcelAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibExcelAccess.dll": {}
+        }
+      },
       "LibModels/1.0.0": {
         "type": "project",
         "compile": {
@@ -619,6 +658,19 @@
         },
         "runtime": {
           "bin/placeholder/LibDatabaseAccess.dll": {}
+        }
+      },
+      "LibExcelAccess/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "LibCommon": "1.0.0",
+          "LibModels": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibExcelAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibExcelAccess.dll": {}
         }
       },
       "LibModels/1.0.0": {
@@ -884,6 +936,11 @@
       "path": "../LibDatabaseAccess/LibDatabaseAccess.csproj",
       "msbuildProject": "../LibDatabaseAccess/LibDatabaseAccess.csproj"
     },
+    "LibExcelAccess/1.0.0": {
+      "type": "project",
+      "path": "../LibExcelAccess/LibExcelAccess.csproj",
+      "msbuildProject": "../LibExcelAccess/LibExcelAccess.csproj"
+    },
     "LibModels/1.0.0": {
       "type": "project",
       "path": "../LibModels/LibModels.csproj",
@@ -904,6 +961,7 @@
     ".NETFramework,Version=v4.7.2": [
       "LibCommon >= 1.0.0",
       "LibDatabaseAccess >= 1.0.0",
+      "LibExcelAccess >= 1.0.0",
       "LibModels >= 1.0.0",
       "LibTextFileAccess >= 1.0.0",
       "Prism.Unity >= 8.0.0.1909",
@@ -950,6 +1008,9 @@
             },
             "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj": {
               "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibDatabaseAccess\\LibDatabaseAccess.csproj"
+            },
+            "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj": {
+              "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibExcelAccess\\LibExcelAccess.csproj"
             },
             "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj": {
               "projectPath": "C:\\User\\Projects\\Practice\\Education\\Source\\LibModels\\LibModels.csproj"

@@ -58,9 +58,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModels\UCEmployeeListViewModel.cs" />
+    <Compile Include="ViewModels\UCMSEmployeeListViewModel.cs" />
     <Compile Include="ViewModels\UCGCEmployeeListViewModel.cs" />
-    <Compile Include="Views\UCEmployeeList.xaml.cs">
-      <DependentUpon>UCEmployeeList.xaml</DependentUpon>
+    <Compile Include="Views\UCMSEmployeeList.xaml.cs">
+      <DependentUpon>UCMSEmployeeList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UCGCEmployeeList.xaml.cs">
       <DependentUpon>UCGCEmployeeList.xaml</DependentUpon>
@@ -78,7 +79,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\UCEmployeeList.xaml">
+    <Page Include="Views\UCMSEmployeeList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,6 +123,10 @@
     <ProjectReference Include="..\LibDatabaseAccess\LibDatabaseAccess.csproj">
       <Project>{6ab088de-6879-44c5-a6c3-d5a95858f5f1}</Project>
       <Name>LibDatabaseAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibExcelAccess\LibExcelAccess.csproj">
+      <Project>{b38130a4-69c9-4a4f-b202-6cd6bed0cf54}</Project>
+      <Name>LibExcelAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\LibModels\LibModels.csproj">
       <Project>{b2e5ad2c-50b2-4c60-80a3-a7bacde3cc50}</Project>

@@ -1,36 +1,33 @@
-﻿using Prism.Commands;
-using Prism.Mvvm;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Prism.Mvvm;
 using Prism.Regions;
+using System.Collections.Generic;
 
 namespace BAMTS.Internal
 {
     public class UCEmployeeListViewModel : BindableBase, INavigationAware
     {
-        private IDataAccessor _dataAccess;
-        private string _targetInfoText = "Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou";
-        public UCEmployeeListViewModel()
-        {
-            this._dataAccess = new SQLServerAccessor(this._targetInfoText);
-        }
+        public static string PARAM_KEY_NAME_DataAccessor = "DataAccessor";
+        private IDataAccessor _dataAccessor;
+        private IList<RecEmployeeAll> _dataList = new List<RecEmployeeAll>();
         public IList<RecEmployeeAll> EmployeeList
         {
-            get { return this._dataAccess.GetEmployeeAll(); }
+            get { return this._dataList; }
+            private set 
+            {
+                SetProperty(ref this._dataList, value);
+            }
         }
-
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
             return false;
         }
-
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
         }
-
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
+            this._dataAccessor = (IDataAccessor)navigationContext.Parameters.GetValue<IDataAccessor>(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor);
+            this.EmployeeList = this._dataAccessor.GetEmployeeAll();
         }
     }
 }
