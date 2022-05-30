@@ -7,5 +7,6 @@ namespace BAMTS.Internal
     public class UCMSEmployeeListViewModel : UCEmployeeListViewModel 
     {
         public UCMSEmployeeListViewModel() : base() { }
+        public UCMSEmployeeListViewModel(IDataAccessor dataAccessor, IMessageService messageService) : base(dataAccessor, messageService) { }
     }
 }

@@ -3,17 +3,38 @@ using Prism.Regions;
 using Prism.Commands;
 using System.Collections.Generic;
 using System;
+using System.Windows;
 
 namespace BAMTS.Internal
 {
     public abstract class UCEmployeeListViewModel : BindableBase, INavigationAware
     {
         public static string PARAM_KEY_NAME_DataAccessor = "DataAccessor";
-        public DelegateCommand DisplayEmployeeList_Click { get; }
-        public DelegateCommand UpdateEmployeeList_Click { get; }
+        public DelegateCommand DisplayEmployeeList_Click { get; private set; }
+        public DelegateCommand UpdateEmployeeList_Click { get; private set; }
         private IDataAccessor _dataAccessor;
         private IList<RecEmployeeAll> _dataList = new List<RecEmployeeAll>();
-        public UCEmployeeListViewModel() 
+        private IMessageService _messageService;
+        /// <summary>
+        /// 実稼働用コンストラクタ
+        /// </summary>
+        public UCEmployeeListViewModel()
+        {
+            this.InitializeMe();
+            this._messageService = new MessageService();
+        }
+        /// <summary>
+        /// MOC用コンストラクタ
+        /// </summary>
+        /// <param name="messageService"></param>
+        public UCEmployeeListViewModel(IDataAccessor dataAccessor, IMessageService messageService)
+        {
+            this.InitializeMe();
+            this._messageService = messageService;
+            this._dataAccessor = dataAccessor;
+            this.EmployeeList = this._dataAccessor.GetEmployeeAll();
+        }
+        private void InitializeMe()
         {
             this.DisplayEmployeeList_Click = new DelegateCommand(this.DisplayEmployeeList_Execute);
             this.UpdateEmployeeList_Click = new DelegateCommand(this.UpdateEmployeeList_Execute);
@@ -35,7 +56,7 @@ namespace BAMTS.Internal
             }
             catch (Exception ex)
             {
-                throw;
+                this._messageService.Show($"社員リストの更新処理にて異常が発生しました。{ex.Message}/{ex.InnerException?.Message ?? ""}", "異常発生", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }
         }
         public bool IsNavigationTarget(NavigationContext navigationContext)
