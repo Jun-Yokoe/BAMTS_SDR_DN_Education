@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace BAMTS.Internal
 {
-    public abstract class UCEmployeeListViewModel : BindableBase, INavigationAware
+    public abstract class UCEmployeeListViewModel : BindableBase, INavigationAware, IConfirmNavigationRequest
     {
         public static string PARAM_KEY_NAME_DataAccessor = "DataAccessor";
         public DelegateCommand DisplayEmployeeList_Click { get; private set; }
@@ -70,6 +70,11 @@ namespace BAMTS.Internal
         {
             this._dataAccessor = (IDataAccessor)navigationContext.Parameters.GetValue<IDataAccessor>(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor);
             this.EmployeeList = this._dataAccessor.GetEmployeeAll();
+        }
+        public void ConfirmNavigationRequest(NavigationContext navigationContext, Action<bool> continuationCallback)
+        {
+            var ans = this._messageService.Show($"この画面を終了しても宜しいですか？", "終了確認", MessageBoxButton.OKCancel, MessageBoxImage.Question, MessageBoxResult.Cancel);
+            if (ans == MessageBoxResult.OK) continuationCallback(true);
         }
     }
 }

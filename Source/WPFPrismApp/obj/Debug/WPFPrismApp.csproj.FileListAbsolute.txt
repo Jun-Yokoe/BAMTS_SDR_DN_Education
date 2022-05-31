@@ -62,3 +62,5 @@ C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\DocumentFormat.
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\bin\Debug\ExcelNumberFormat.xml
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCMSEmployeeList.baml
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCMSEmployeeList.g.cs
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCDisplayInfomation.baml
+C:\User\Projects\Practice\Education\Source\WPFPrismApp\obj\Debug\Views\UCDisplayInfomation.g.cs

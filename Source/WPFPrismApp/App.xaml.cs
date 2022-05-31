@@ -18,6 +18,7 @@ namespace BAMTS.Internal
         {
             containerRegistry.RegisterForNavigation<BAMTS.Internal.UCMSEmployeeList>();
             containerRegistry.RegisterForNavigation<BAMTS.Internal.UCGCEmployeeList>();
+            containerRegistry.RegisterDialog<BAMTS.Internal.UCDisplayInfomation, UCDisplayInfomationViewModel>();
         }
     }
 }

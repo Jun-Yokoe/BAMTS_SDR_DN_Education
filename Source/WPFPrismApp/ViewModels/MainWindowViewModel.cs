@@ -10,6 +10,7 @@ namespace BAMTS.Internal
 {
     public class MainWindowViewModel : BindableBase
     {
+        public DelegateCommand ShowInformation_Click { get; }
         public DelegateCommand ApplicationExitButton_Click { get; }
         public DelegateCommand DisplayEmployeeGCCsvList_Click { get; }
         public DelegateCommand DisplayEmployeeGCSqlList_Click { get; }
@@ -23,6 +24,7 @@ namespace BAMTS.Internal
         private Timer _timer;
         private DateTime _currentTime = DateTime.Now;
         private readonly IRegionManager _regionManager;
+        private readonly IDialogService _dialogService;
         private string _title = "Prism Application";
         private string _regionName = "ContentRegion";
         public string Title
@@ -30,10 +32,12 @@ namespace BAMTS.Internal
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
-        public MainWindowViewModel(IRegionManager regionManager)
+        public MainWindowViewModel(IRegionManager regionManager, IDialogService dialogService)
         {
             this.TimerInterval = 1000;
             this._regionManager = regionManager;
+            this._dialogService = dialogService;
+            this.ShowInformation_Click = new DelegateCommand(this.ShowInformation_Execute);
             this.DisplayEmployeeGCCsvList_Click = new DelegateCommand(this.DisplayEmployeeGCCsvList_Execute);
             this.DisplayEmployeeGCSqlList_Click = new DelegateCommand(this.DisplayEmployeeGCSqlList_Execute);
             this.DisplayEmployeeGCWebAPIList_Click = new DelegateCommand(this.DisplayEmployeeGCWebAPIList_Execute);
@@ -43,6 +47,10 @@ namespace BAMTS.Internal
             this.DisplayEmployeeMSWebAPIList_Click = new DelegateCommand(this.DisplayEmployeeMSWebAPIList_Execute);
             this.DisplayEmployeeMSExcelList_Click = new DelegateCommand(this.DisplayEmployeeMSExcelList_Execute);
             this.ApplicationExitButton_Click = new DelegateCommand(this.ShutdownApplication_Execute);
+        }
+        private void ShowInformation_Execute()
+        {
+            this._dialogService.ShowDialog(nameof(UCDisplayInfomation), null, null);
         }
         public DateTime CurrentTime
         {
