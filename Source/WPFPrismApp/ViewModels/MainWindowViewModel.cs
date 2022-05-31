@@ -26,11 +26,17 @@ namespace BAMTS.Internal
         private readonly IRegionManager _regionManager;
         private readonly IDialogService _dialogService;
         private string _title = "Prism Application";
+        private string _displayComment = "";
         private string _regionName = "ContentRegion";
         public string Title
         {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
+            get { return this._title; }
+            set { SetProperty(ref this._title, value); }
+        }
+        public string DisplayComment
+        {
+            get { return this._displayComment; }
+            set { SetProperty(ref this._displayComment, value); }
         }
         public MainWindowViewModel(IRegionManager regionManager, IDialogService dialogService)
         {
@@ -50,7 +56,16 @@ namespace BAMTS.Internal
         }
         private void ShowInformation_Execute()
         {
-            this._dialogService.ShowDialog(nameof(UCDisplayInfomation), null, null);
+            var p = new DialogParameters();
+            p.Add(nameof(UCDisplayInfomationViewModel.TextInput), "初期テキスト値");
+            this._dialogService.ShowDialog(nameof(UCDisplayInfomation), p, this.Information_Close);
+        }
+        private void Information_Close(IDialogResult dialogResult)
+        {
+            if (dialogResult.Result == ButtonResult.OK)
+            {
+                this.DisplayComment = dialogResult.Parameters.GetValue<string>(nameof(UCDisplayInfomationViewModel.TextInput));
+            }
         }
         public DateTime CurrentTime
         {

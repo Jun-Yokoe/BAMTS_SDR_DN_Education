@@ -1,5 +1,4 @@
 ﻿using Prism.Commands;
-using Prism.Commands;
 using Prism.Services.Dialogs;
 using Prism.Mvvm;
 using System;
@@ -13,6 +12,7 @@ namespace BAMTS.Internal
         private string _textInput = "";
 
         public event Action<IDialogResult> RequestClose;
+        public DelegateCommand OKButton_Click { get; }
 
         public string TextInput
         {
@@ -26,6 +26,13 @@ namespace BAMTS.Internal
 
         public UCDisplayInfomationViewModel()
         {
+            this.OKButton_Click = new DelegateCommand(this.OKButton_Execute);
+        }
+        private void OKButton_Execute()
+        {
+            var p = new DialogParameters();
+            p.Add(nameof(UCDisplayInfomationViewModel.TextInput), this.TextInput);
+            this.RequestClose?.Invoke(new DialogResult(ButtonResult.OK, p));
         }
         public bool CanCloseDialog()
         {
@@ -36,6 +43,7 @@ namespace BAMTS.Internal
         }
         public void OnDialogOpened(IDialogParameters parameters)
         {
+            this.TextInput = parameters.GetValue<string>(nameof(UCDisplayInfomationViewModel.TextInput));
         }
     }
 }

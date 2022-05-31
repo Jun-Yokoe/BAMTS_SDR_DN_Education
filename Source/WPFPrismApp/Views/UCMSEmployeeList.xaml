@@ -4,9 +4,18 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel>
-            <DataGrid ItemsSource="{Binding EmployeeList}">
-            </DataGrid>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="btnDisplay" Content="表示" Width="100" HorizontalAlignment="Right" Grid.Row="0" Grid.Column="2" Command="{Binding DisplayEmployeeList_Click}"/>
+        <DataGrid ItemsSource="{Binding EmployeeList}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" />
+        <Button x:Name="btnUpdate" Content="更新" Width="100" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="0" Command="{Binding UpdateEmployeeList_Click}"/>
     </Grid>
 </UserControl>

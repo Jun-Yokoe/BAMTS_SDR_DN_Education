@@ -7,6 +7,7 @@
         <StackPanel>
             <Label Content="This program is for study programming on windows." FontSize="25" Background="Beige" Foreground="Brown" />
             <TextBox Text="{Binding TextInput}" />
+            <Button Content="OK" Command="{Binding OKButton_Click}" />
         </StackPanel>
     </Grid>
 </UserControl>
