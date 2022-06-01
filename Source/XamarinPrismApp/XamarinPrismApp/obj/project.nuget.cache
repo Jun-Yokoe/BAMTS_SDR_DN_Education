@@ -1,22 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "wPZ0S8cf+M8b8W0ec7xDHKn62kyXFLTeiI4eX127pwfj6uJmR7NS2TSAEECZaONkbB9pBFTl44/1vB8Ddb140w==",
+  "dgSpecHash": "EAozXnk4LdJvTC9eNjAMumBfVfM9Fx9l/2iKJmfgMeUcsCzzupUsLoGowJhIrcjXUN8vOiPcgPgWa4WQZDDlig==",
   "success": true,
   "projectFilePath": "C:\\User\\Projects\\Practice\\Education\\Source\\XamarinPrismApp\\XamarinPrismApp\\XamarinPrismApp.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\prism.unity.forms\\8.0.0.1909\\prism.unity.forms.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\prism.forms\\8.1.97\\prism.forms.8.1.97.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\prism.unity.forms\\8.1.97\\prism.unity.forms.8.1.97.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\unity.abstractions\\5.11.6\\unity.abstractions.5.11.6.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\unity.container\\5.11.8\\unity.container.5.11.8.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.3.2\\xamarin.essentials.interfaces.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\xamarin.forms\\4.8.0.1364\\xamarin.forms.4.8.0.1364.nupkg.sha512"
+    "C:\\Users\\jun\\.nuget\\packages\\unity.abstractions\\5.11.7\\unity.abstractions.5.11.7.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\unity.container\\5.11.11\\unity.container.5.11.11.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\xamarin.essentials\\1.7.3\\xamarin.essentials.1.7.3.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\xamarin.essentials.interfaces\\1.7.3.1\\xamarin.essentials.interfaces.1.7.3.1.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\xamarin.forms\\5.0.0.2401\\xamarin.forms.5.0.0.2401.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\xamarin.forms.datagrid\\4.8.0\\xamarin.forms.datagrid.4.8.0.nupkg.sha512"
   ],
   "logs": []
 }

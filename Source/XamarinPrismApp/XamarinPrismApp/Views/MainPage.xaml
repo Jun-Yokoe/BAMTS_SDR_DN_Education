@@ -2,10 +2,87 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinPrismApp.Views.MainPage"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
+             xmlns:dg="clr-namespace:Xamarin.Forms.DataGrid;assembly=Xamarin.Forms.DataGrid" 
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
-        <Button Text="Change Message" />
+        <Button Text="Display Data" />
+        <!--SelectedItem="{Binding SelectedProfesstional}" 
+            PullToRefreshCommand="{Binding RefreshCommand}"-->
+        <Frame BorderColor="Orange" Margin="5,0,5,0">
+            <dg:DataGrid 
+                ItemsSource="{Binding EmployeeList}" 
+                SelectionEnabled="True" 
+                RowHeight="30" 
+                HeaderHeight="30"  
+                BorderColor="#CCCCCC" 
+                HeaderBackground="#E0E6F8" 
+                IsRefreshing="{Binding IsRefreshing}" 
+                ActiveRowColor="#8899AA">
+                <x:Arguments>
+                    <ListViewCachingStrategy>RetainElement</ListViewCachingStrategy>
+                </x:Arguments>
+                <!--<dg:DataGrid.HeaderFontSize>
+                    <OnIdiom x:TypeArguments="x:Double">
+                        <OnIdiom.Tablet>15</OnIdiom.Tablet>
+                        <OnIdiom.Phone>12</OnIdiom.Phone>
+                    </OnIdiom>
+                </dg:DataGrid.HeaderFontSize>-->
+                <dg:DataGrid.Columns>
+                    <dg:DataGridColumn Title="社員ID" PropertyName="EMP_ID" Width="1*">
+                        <dg:DataGridColumn.FormattedTitle>
+                            <FormattedString>
+                                <Span Text="社員ID" FontSize="12" TextColor="Blue" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </dg:DataGridColumn.FormattedTitle>
+                    </dg:DataGridColumn>
+                    <dg:DataGridColumn Title="社員名" PropertyName="EMP_NAME" Width="2*">
+                        <dg:DataGridColumn.FormattedTitle>
+                            <FormattedString>
+                                <Span Text="社員名" FontSize="12" TextColor="Blue" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </dg:DataGridColumn.FormattedTitle>
+                    </dg:DataGridColumn>
+                    <dg:DataGridColumn Title="生年月日" PropertyName="BIRTH_DATE" Width="2*">
+                        <dg:DataGridColumn.FormattedTitle>
+                            <FormattedString>
+                                <Span Text="生年月日" FontSize="12" TextColor="Blue" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </dg:DataGridColumn.FormattedTitle>
+                    </dg:DataGridColumn>
+                    <dg:DataGridColumn Title="携帯電話番号" PropertyName="CELLPHONE_NO" Width="2*">
+                        <dg:DataGridColumn.FormattedTitle>
+                            <FormattedString>
+                                <Span Text="携帯電話番号" FontSize="12" TextColor="Blue" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </dg:DataGridColumn.FormattedTitle>
+                    </dg:DataGridColumn>
+                    <dg:DataGridColumn Title="メールアドレス" PropertyName="PC_MAIL_ADDRESS" Width="2*">
+                        <dg:DataGridColumn.FormattedTitle>
+                            <FormattedString>
+                                <Span Text="メールアドレス" FontSize="12" TextColor="Blue" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </dg:DataGridColumn.FormattedTitle>
+                    </dg:DataGridColumn>
+                    <dg:DataGridColumn Title="備考" PropertyName="NOTE" Width="5*" HorizontalContentAlignment="Start">
+                        <dg:DataGridColumn.FormattedTitle>
+                            <FormattedString>
+                                <Span Text="備考" FontSize="12" TextColor="Blue" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </dg:DataGridColumn.FormattedTitle>
+                    </dg:DataGridColumn>
+                </dg:DataGrid.Columns>
+                <dg:DataGrid.RowsBackgroundColorPalette>
+                    <dg:PaletteCollection>
+                        <Color>#F2F2F2</Color>
+                        <Color>#FFFFFF</Color>
+                    </dg:PaletteCollection>
+                </dg:DataGrid.RowsBackgroundColorPalette>
+            </dg:DataGrid>
+        </Frame>
+        <Button IsEnabled="{Binding UpdateButtonEnabled}" Text="Update" Command="{Binding UpdateButton_Click}" />
     </StackLayout>
+
 </ContentPage>

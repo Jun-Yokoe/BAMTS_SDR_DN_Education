@@ -28,7 +28,6 @@ namespace XamarinPrismApp
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
-            containerRegistry.RegisterForNavigation<PrismMasterDetailPage1, PrismMasterDetailPage1ViewModel>();
         }
     }
 }
