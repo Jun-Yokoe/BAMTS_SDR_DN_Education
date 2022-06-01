@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XjzqRPPgrwoT6sQOqzAMqR5c9Segtg2LxeZqiEPC3Snpyqs58z9QBB9ptp18C7KzqNWvAS6arXRZDoY1+t5Jgw==",
+  "dgSpecHash": "u9KhFbRCfDwz52m67JV8nJdpgBqZf7U5SmObss9FSj2sLSxIvS6LffwoPdqDNR4+wcGc1ZzTtvXFj4+PBtjHjA==",
   "success": true,
   "projectFilePath": "C:\\User\\Projects\\Practice\\Education\\Source\\XamarinPrismApp\\XamarinPrismApp.iOS\\XamarinPrismApp.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jun\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\prism.forms\\8.1.97\\prism.forms.8.1.97.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\prism.unity.forms\\8.1.97\\prism.unity.forms.8.1.97.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",

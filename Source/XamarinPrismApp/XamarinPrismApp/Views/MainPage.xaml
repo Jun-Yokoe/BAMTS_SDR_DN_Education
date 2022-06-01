@@ -8,7 +8,7 @@
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
-        <Button Text="Display Data" />
+        <Button Text="Display Data" Command="{Binding DisplayButton_Click}" />
         <!--SelectedItem="{Binding SelectedProfesstional}" 
             PullToRefreshCommand="{Binding RefreshCommand}"-->
         <Frame BorderColor="Orange" Margin="5,0,5,0">

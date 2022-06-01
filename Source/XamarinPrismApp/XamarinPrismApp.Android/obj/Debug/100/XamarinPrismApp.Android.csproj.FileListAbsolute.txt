@@ -653,3 +653,4 @@ C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp.Andro
 C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp.Android\obj\Debug\100\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEditTextAttachedListenerImplementor.java
 C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp.Android\obj\Debug\100\android\src\mono\com\google\android\material\textfield\TextInputLayout_OnEndIconChangedListenerImplementor.java
 C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp.Android\obj\Debug\100\android\assets\Xamarin.Forms.DataGrid.dll
+C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp.Android\obj\Debug\100\android\assets\Newtonsoft.Json.dll

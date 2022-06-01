@@ -53,9 +53,17 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Prism.Unity.Forms": {
               "target": "Package",
               "version": "[8.1.97, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             },
             "Xamarin.Essentials.Interfaces": {
               "target": "Package",

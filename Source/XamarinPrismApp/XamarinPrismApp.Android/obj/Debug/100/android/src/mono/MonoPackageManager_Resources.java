@@ -5,6 +5,7 @@ public class MonoPackageManager_Resources {
 		"XamarinPrismApp.Android.dll",
 		"Essential.Interfaces.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Prism.dll",
 		"Prism.Forms.dll",
 		"Prism.Unity.Forms.dll",

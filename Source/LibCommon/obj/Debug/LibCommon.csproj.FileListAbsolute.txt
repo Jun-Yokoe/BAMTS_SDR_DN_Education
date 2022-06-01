@@ -10,3 +10,4 @@ C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.csproj.
 C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.csproj.CopyComplete
 C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.dll
 C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.pdb
+C:\User\Projects\Practice\Education\Source\LibCommon\obj\Debug\LibCommon.csproj.AssemblyReference.cache
