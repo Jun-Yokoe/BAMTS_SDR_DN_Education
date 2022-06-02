@@ -26,9 +26,9 @@ namespace BAMTS.Internal
             using (var f = new FDisplayListEmployee(dataAccessor)){ f.ShowDialog(this); }
         }
         private void timDisplayTime_Tick(object sender, EventArgs e) => this.Text = $"BAMTS Internal System Menu ({DateTime.Now:yyyy/MM/dd HH:mm:ss})";
-        private void btnListEmployeeCSV_Click(object sender, EventArgs e) => this.ShowEmployeeList(new CSVFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.CSV"));
+        private void btnListEmployeeCSV_Click(object sender, EventArgs e) => this.ShowEmployeeList(new CSVFileAccessor(Common.TARGET_CSV_FILE_PATH));
         private void btnListEmployeeSqlDB_Click(object sender, EventArgs e) => this.ShowEmployeeList(new SQLServerAccessor(Common.TARGET_DATABASE_CONNECTION_SETTINGS));
-        private void btnListEmployeeWebAPI_Click(object sender, EventArgs e) => this.ShowEmployeeList(new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController"));
-        private void btnListEmployeeExcel_Click(object sender, EventArgs e) => this.ShowEmployeeList(new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
+        private void btnListEmployeeWebAPI_Click(object sender, EventArgs e) => this.ShowEmployeeList(new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER));
+        private void btnListEmployeeExcel_Click(object sender, EventArgs e) => this.ShowEmployeeList(new ExcelFileAccessor(Common.TARGET_EXCEL_FILE_PATH, Common.TARGET_EXCEL_FILE_SHEET));
     }
 }

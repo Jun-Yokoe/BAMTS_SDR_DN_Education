@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\User\Projects\Practice\Education\Source\WPFPrismApp\App.xaml
-4-1723904598
+6-1503719148
 
-16305963306
-301426430217
-Views\MainWindow.xaml;Views\UCDisplayInfomation.xaml;Views\UCMSEmployeeList.xaml;Views\UCGCEmployeeList.xaml;
+20905371518
+41-852624933
+Views\DisplayMSExcelSheet.xaml;Views\MainWindow.xaml;Views\PrismUserControl1.xaml;Views\UCDisplayInfomation.xaml;Views\UCMSEmployeeList.xaml;Views\UCGCEmployeeList.xaml;
 
 False
 

@@ -86,7 +86,7 @@ namespace BAMTS.Internal
         private void DisplayEmployeeGCCsvList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new CSVFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.CSV"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new CSVFileAccessor(Common.TARGET_CSV_FILE_PATH));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCGCEmployeeList), param);
         }
         private void DisplayEmployeeGCSqlList_Execute()
@@ -98,19 +98,19 @@ namespace BAMTS.Internal
         private void DisplayEmployeeGCWebAPIList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCGCEmployeeList), param);
         }
         private void DisplayEmployeeGCExcelList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(Common.TARGET_EXCEL_FILE_PATH, Common.TARGET_EXCEL_FILE_SHEET));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCGCEmployeeList), param);
         }
         private void DisplayEmployeeMSCsvList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new CSVFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.CSV"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new CSVFileAccessor(Common.TARGET_CSV_FILE_PATH));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCMSEmployeeList), param);
         }
         private void DisplayEmployeeMSSqlList_Execute()
@@ -122,20 +122,18 @@ namespace BAMTS.Internal
         private void DisplayEmployeeMSWebAPIList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCMSEmployeeList), param);
         }
         private void DisplayEmployeeMSExcelList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(Common.TARGET_EXCEL_FILE_PATH, Common.TARGET_EXCEL_FILE_SHEET));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCMSEmployeeList), param);
         }
         private void DisplayMSExcelSheet_Execute()
         {
-            //var param = new NavigationParameters();
-            //param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
-            //this._regionManager.RequestNavigate(this._regionName, nameof(DisplayMSExcelSheet), param);
+            this._regionManager.RequestNavigate(this._regionName, nameof(DisplayMSExcelSheet));
         }
         private void ShutdownApplication_Execute()
         {

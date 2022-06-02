@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="BAMTS.Internal.DisplayMSExcelSheet"             
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             xmlns:gss="http://schemas.grapecity.com/windows/spreadsheet/2020" 
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <!--<Grid>
+        <gss:GcSpreadSheet HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+            <Button Name="btnOpenFile" Content="開く" Click="btnOpenFile_Click"/>
+            <Button Name="btnSaveFile" Content="保存" Click="btnSaveFile_Click"/>
+            <Button Name="btnReset" Content="初期化" Click="btnReset_Click"/>
+        </StackPanel>
+        <gss:GcSpreadSheet x:Name="gcSpreadSheet1" Grid.Row="1"/>
+    </Grid></UserControl>

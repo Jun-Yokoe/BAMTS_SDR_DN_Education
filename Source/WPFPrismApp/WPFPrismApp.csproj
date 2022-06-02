@@ -36,9 +36,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GrapeCity.CalcEngine, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.SpreadGrid.Design.Common, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=5c5c8ff7a6858ccc, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Wpf.CalcEngine, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=6ccb469776ba232c, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.WPF.Excel, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=6ccb469776ba232c, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Wpf.PDF, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=6ccb469776ba232c, processorArchitecture=MSIL" />
     <Reference Include="GrapeCity.WPF.SpreadGrid, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=5c5c8ff7a6858ccc, processorArchitecture=MSIL" />
+    <Reference Include="grapecity.wpf.spreadsheet, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Wpf.SpreadSheet.CellType, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Wpf.SpreadSheet.Design.Common, Version=3.0.4501.2015, Culture=neutral, PublicKeyToken=a5fa960294d899e7, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Printing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -59,10 +70,18 @@
     </ApplicationDefinition>
     <Compile Include="Services\IMessageService.cs" />
     <Compile Include="Services\MessageService.cs" />
+    <Compile Include="ViewModels\DisplayMSExcelSheetViewModel.cs" />
+    <Compile Include="ViewModels\PrismUserControl1ViewModel.cs" />
     <Compile Include="ViewModels\UCDisplayInfomationViewModel.cs" />
     <Compile Include="ViewModels\UCEmployeeListViewModel.cs" />
     <Compile Include="ViewModels\UCMSEmployeeListViewModel.cs" />
     <Compile Include="ViewModels\UCGCEmployeeListViewModel.cs" />
+    <Compile Include="Views\DisplayMSExcelSheet.xaml.cs">
+      <DependentUpon>DisplayMSExcelSheet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrismUserControl1.xaml.cs">
+      <DependentUpon>PrismUserControl1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UCDisplayInfomation.xaml.cs">
       <DependentUpon>UCDisplayInfomation.xaml</DependentUpon>
     </Compile>
@@ -72,6 +91,10 @@
     <Compile Include="Views\UCGCEmployeeList.xaml.cs">
       <DependentUpon>UCGCEmployeeList.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\DisplayMSExcelSheet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,6 +108,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\PrismUserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\UCDisplayInfomation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
