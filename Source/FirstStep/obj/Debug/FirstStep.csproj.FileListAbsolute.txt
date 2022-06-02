@@ -7,4 +7,3 @@ C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.csproj.
 C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.exe
 C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.pdb
 C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.FProgram1stStep.resources
-C:\User\Projects\Practice\Education\Source\FirstStep\obj\Debug\FirstStep.csproj.AssemblyReference.cache

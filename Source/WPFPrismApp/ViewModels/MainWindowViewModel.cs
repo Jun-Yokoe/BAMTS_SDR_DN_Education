@@ -20,6 +20,7 @@ namespace BAMTS.Internal
         public DelegateCommand DisplayEmployeeMSSqlList_Click { get; }
         public DelegateCommand DisplayEmployeeMSWebAPIList_Click { get; }
         public DelegateCommand DisplayEmployeeMSExcelList_Click { get; }
+        public DelegateCommand DisplayMSExcelSheet_Click { get; }
         public int TimerInterval { get; private set; }
         private Timer _timer;
         private DateTime _currentTime = DateTime.Now;
@@ -52,6 +53,7 @@ namespace BAMTS.Internal
             this.DisplayEmployeeMSSqlList_Click = new DelegateCommand(this.DisplayEmployeeMSSqlList_Execute);
             this.DisplayEmployeeMSWebAPIList_Click = new DelegateCommand(this.DisplayEmployeeMSWebAPIList_Execute);
             this.DisplayEmployeeMSExcelList_Click = new DelegateCommand(this.DisplayEmployeeMSExcelList_Execute);
+            this.DisplayMSExcelSheet_Click = new DelegateCommand(this.DisplayMSExcelSheet_Execute);
             this.ApplicationExitButton_Click = new DelegateCommand(this.ShutdownApplication_Execute);
         }
         private void ShowInformation_Execute()
@@ -90,7 +92,7 @@ namespace BAMTS.Internal
         private void DisplayEmployeeGCSqlList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new SQLServerAccessor(Common.TARGET_DATABASE_CONNECTION_SETTINGS));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCGCEmployeeList), param);
         }
         private void DisplayEmployeeGCWebAPIList_Execute()
@@ -114,7 +116,7 @@ namespace BAMTS.Internal
         private void DisplayEmployeeMSSqlList_Execute()
         {
             var param = new NavigationParameters();
-            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou"));
+            param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new SQLServerAccessor(Common.TARGET_DATABASE_CONNECTION_SETTINGS));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCMSEmployeeList), param);
         }
         private void DisplayEmployeeMSWebAPIList_Execute()
@@ -128,6 +130,12 @@ namespace BAMTS.Internal
             var param = new NavigationParameters();
             param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
             this._regionManager.RequestNavigate(this._regionName, nameof(UCMSEmployeeList), param);
+        }
+        private void DisplayMSExcelSheet_Execute()
+        {
+            //var param = new NavigationParameters();
+            //param.Add(UCEmployeeListViewModel.PARAM_KEY_NAME_DataAccessor, new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
+            //this._regionManager.RequestNavigate(this._regionName, nameof(DisplayMSExcelSheet), param);
         }
         private void ShutdownApplication_Execute()
         {

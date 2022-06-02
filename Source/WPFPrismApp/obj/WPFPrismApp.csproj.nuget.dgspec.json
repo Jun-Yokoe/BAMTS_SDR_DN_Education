@@ -183,7 +183,7 @@
           "dependencies": {
             "Prism.Unity": {
               "target": "Package",
-              "version": "[8.0.0.1909, )"
+              "version": "[8.1.97, )"
             }
           }
         }

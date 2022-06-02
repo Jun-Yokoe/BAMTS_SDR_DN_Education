@@ -27,7 +27,7 @@ namespace BAMTS.Internal
         }
         private void timDisplayTime_Tick(object sender, EventArgs e) => this.Text = $"BAMTS Internal System Menu ({DateTime.Now:yyyy/MM/dd HH:mm:ss})";
         private void btnListEmployeeCSV_Click(object sender, EventArgs e) => this.ShowEmployeeList(new CSVFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.CSV"));
-        private void btnListEmployeeSqlDB_Click(object sender, EventArgs e) => this.ShowEmployeeList(new SQLServerAccessor("Data Source=BAMTS-ISFSERV01;Initial Catalog=BAMTS_DB;Persist Security Info=True;User ID=naitou;Password=naitou"));
+        private void btnListEmployeeSqlDB_Click(object sender, EventArgs e) => this.ShowEmployeeList(new SQLServerAccessor(Common.TARGET_DATABASE_CONNECTION_SETTINGS));
         private void btnListEmployeeWebAPI_Click(object sender, EventArgs e) => this.ShowEmployeeList(new WebAPIClientAccessor("192.168.1.12", 1486, "DatabaseAccessController"));
         private void btnListEmployeeExcel_Click(object sender, EventArgs e) => this.ShowEmployeeList(new ExcelFileAccessor(@"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx", "EMPLOYEE"));
     }

@@ -4,6 +4,7 @@ using Prism.Commands;
 using System.Collections.Generic;
 using System;
 using System.Windows;
+using GrapeCity.Windows.SpreadGrid;
 
 namespace BAMTS.Internal
 {
@@ -13,7 +14,7 @@ namespace BAMTS.Internal
         public DelegateCommand DisplayEmployeeList_Click { get; private set; }
         public DelegateCommand UpdateEmployeeList_Click { get; private set; }
         private IDataAccessor _dataAccessor;
-        private IList<RecEmployeeAll> _dataList = new List<RecEmployeeAll>();
+        protected IList<RecEmployeeAll> _dataList = new List<RecEmployeeAll>();
         private IMessageService _messageService;
         /// <summary>
         /// 実稼働用コンストラクタ
@@ -42,7 +43,10 @@ namespace BAMTS.Internal
         public IList<RecEmployeeAll> EmployeeList
         {
             get { return this._dataList; }
-            private set { SetProperty(ref this._dataList, value); }
+            private set 
+            {
+                SetProperty(ref this._dataList, value); 
+            }
         }
         private void DisplayEmployeeList_Execute()
         {

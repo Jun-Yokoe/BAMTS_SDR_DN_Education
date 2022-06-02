@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "kfmZb4D5a22fBf93pJL9EsnowUtqvKQ82J46whFpz0XH2E8YVTcDrgi1z2CmxfxiTRXeej2QpZXiQk0stT5uvA==",
+  "dgSpecHash": "KxdJGNuA0nLbmnoZ37N60cMcOuWREsSUuWX+ZDY5iAngg+IoTOZfIAvztVueCays88XnIx8kBmHRUxIimDLWyQ==",
   "success": true,
   "projectFilePath": "C:\\User\\Projects\\Practice\\Education\\Source\\WPFPrismApp\\WPFPrismApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jun\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\prism.unity\\8.0.0.1909\\prism.unity.8.0.0.1909.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\prism.wpf\\8.0.0.1909\\prism.wpf.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\prism.unity\\8.1.97\\prism.unity.8.1.97.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\jun\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\unity.abstractions\\5.11.6\\unity.abstractions.5.11.6.nupkg.sha512",
-    "C:\\Users\\jun\\.nuget\\packages\\unity.container\\5.11.8\\unity.container.5.11.8.nupkg.sha512"
+    "C:\\Users\\jun\\.nuget\\packages\\unity.abstractions\\5.11.7\\unity.abstractions.5.11.7.nupkg.sha512",
+    "C:\\Users\\jun\\.nuget\\packages\\unity.container\\5.11.11\\unity.container.5.11.11.nupkg.sha512"
   ],
   "logs": []
 }

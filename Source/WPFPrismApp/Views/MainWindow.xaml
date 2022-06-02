@@ -1,10 +1,12 @@
-﻿<Window
+﻿<Window x:Class="BAMTS.Internal.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
-        xmlns:sg="http://schemas.grapecity.com/windows/spreadgrid/2012" x:Class="BAMTS.Internal.MainWindow"
+        xmlns:sg="http://schemas.grapecity.com/windows/spreadgrid/2012" 
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="358.5" Width="835.912">
+        Title="{Binding Title}" 
+        Height="500" 
+        Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
@@ -27,7 +29,7 @@
         </DockPanel>
         <ScrollViewer  Grid.Row="1" Grid.Column="0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto"  Margin="0,0,4,0">
             <DockPanel>
-                <Button DockPanel.Dock="Top" x:Name="btnInformation" Background="Aqua"  Content="Show Information" Height="25" HorizontalContentAlignment="Left" Margin="1,2,0,1" Command="{Binding ShowInformation_Click}"/>
+                <Button DockPanel.Dock="Top" x:Name="btnInformation" Background="Aqua"  Content="Show Popup-Dialog and receive answer" Height="25" HorizontalContentAlignment="Left" Margin="1,2,0,1" Command="{Binding ShowInformation_Click}"/>
                 <Button DockPanel.Dock="Top" x:Name="btnEmpListGCCsv" Background="Purple" Content="Employee List(GCGrid:CSV)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayEmployeeGCCsvList_Click}"/>
                 <Button DockPanel.Dock="Top" x:Name="btnEmpListGCSQL" Background="Purple" Content="Employee List(GCGrid:SQLServer)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayEmployeeGCSqlList_Click}"/>
                 <Button DockPanel.Dock="Top" x:Name="btnEmpListGCAPI" Background="Purple" Content="Employee List(GCGrid:WebAPI)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayEmployeeGCWebAPIList_Click}"/>
@@ -36,6 +38,7 @@
                 <Button DockPanel.Dock="Top" x:Name="btnEmpListMSSQL" Background="CornflowerBlue" Content="Employee List(MSGrid:SQLServer)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayEmployeeMSSqlList_Click}"/>
                 <Button DockPanel.Dock="Top" x:Name="btnEmpListMSAPI" Background="CornflowerBlue" Content="Employee List(MSGrid:WebAPI)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayEmployeeMSWebAPIList_Click}"/>
                 <Button DockPanel.Dock="Top" x:Name="btnEmpListMSExcel" Background="CornflowerBlue" Content="Employee List(MSGrid:Excel)" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayEmployeeMSExcelList_Click}"/>
+                <Button DockPanel.Dock="Top" x:Name="btnExcelSheet" Background="Green"  Content="ExcelSheet" Height="25" HorizontalContentAlignment="Left" Margin="1,1,0,1" Command="{Binding DisplayMSExcelSheet_Click}"/>
                 <Button DockPanel.Dock="Bottom" x:Name="btnExit" Background="Orange"  Content="Exit" Height="25" VerticalAlignment="Bottom" Margin="1,1,1,2" Command="{Binding ApplicationExitButton_Click}"/>
             </DockPanel>
         </ScrollViewer>
