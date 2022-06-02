@@ -25,14 +25,21 @@ namespace XamarinPrismApp.ViewModels
         }
         private void UpdateButton_Execute()
         {
-            if (this._dataList.Count > 0)
+            try
             {
-                var dataList = new List<RecEmployeeAll>();
-                dataList.AddRange(this._dataList);
-                dataList.RemoveAt(0);
-                this.EmployeeList = dataList;
+                this.UpdateButtonEnabled = false;
+                if (this._dataList.Count > 0)
+                {
+                    var dataList = new List<RecEmployeeAll>();
+                    dataList.AddRange(this._dataList);
+                    dataList.RemoveAt(0);
+                    this.EmployeeList = dataList;
+                }
             }
-            this.UpdateButtonEnabled = (this._dataList.Count > 0);
+            finally
+            {
+                this.UpdateButtonEnabled = (this._dataList.Count > 0);
+            }
         }
         private async void DisplayButton_ExecuteAsync()
         {

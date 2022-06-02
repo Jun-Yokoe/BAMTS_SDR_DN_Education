@@ -82,7 +82,7 @@
                 </dg:DataGrid.RowsBackgroundColorPalette>
             </dg:DataGrid>
         </Frame>
-        <Button IsEnabled="{Binding UpdateButtonEnabled}" Text="Update" Command="{Binding UpdateButton_Click}" />
+        <Button x:Name="btnUpdate" IsEnabled="{Binding UpdateButtonEnabled}" Text="Update" Command="{Binding UpdateButton_Click}" />
     </StackLayout>
 
 </ContentPage>

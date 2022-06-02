@@ -10,4 +10,3 @@ C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\D
 C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamlC.stamp
 C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.dll
 C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.pdb
-C:\User\Projects\Practice\Education\Source\XamarinPrismApp\XamarinPrismApp\obj\Debug\netstandard2.0\XamarinPrismApp.csproj.AssemblyReference.cache
