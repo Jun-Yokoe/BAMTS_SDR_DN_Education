@@ -1,0 +1,76 @@
+﻿@page "/employeelist"
+
+@using BAMTS.Internal;
+@using Newtonsoft.Json;
+@using System.Net; 
+@inject HttpClient Http;
+
+<h1>EmployeeList</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in list)
+        {
+            <tr>
+                <td>@item.EMP_ID</td>
+                <td>@item.EMP_NAME</td>
+                <td>@item.BIRTH_DATE.ToString("yyyy/MM/dd");</td>
+                <td>@item.CELLPHONE_MAIL_ADDRESS</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-primary" @onclick="LoadDataAsync">Display List</button>
+
+@code {
+
+    //WebAPIClientAccessor webClient = new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER);
+    IList<RecEmployeeAll> list = new List<RecEmployeeAll>();
+
+    private async void LoadDataAsync()
+    {
+        try
+        {
+            //using (HttpClient client = new HttpClient())
+            //{
+            //    var response = client.GetAsync("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll").GetAwaiter().GetResult();
+            //    if (response.StatusCode == HttpStatusCode.OK)
+            //        this.list = JsonConvert.DeserializeObject<IList<RecEmployeeAll>>(response.Content.ReadAsStringAsync().Result);
+            //    else
+            //        throw new Exception(response.Content.ReadAsStringAsync().Result);
+            //}
+
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00001", "森谷　正史", "1966/01/01", "2000/01/01", "0", "1", "090-1111-2222", "moritani-cp@bamts.ne.jp", "moritani-pc@bamts.co.jp", "passpass", "社長" }));
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00002", "松田　将秀", "1986/01/01", "2000/01/01", "0", "1", "090-1111-2222", "matsuda-cp@bamts.ne.jp", "matsuda-pc@bamts.co.jp", "passpass", "Superアルバイト" }));
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00003", "北村　順子", "1960/02/22", "2002/01/01", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00004", "横山　真理子", "1960/02/22", "2002/01/01", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00005", "西田　文彦", "1960/02/22", "2002/01/01", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00006", "内藤　光治", "1960/02/22", "2002/01/01", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
+            //this.list.Add(new RecEmployeeAll(new List<string>() { "00007", "横江　純", "1960/02/22", "1972/08/13", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
+
+            this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll");
+            this.StateHasChanged();
+        }
+        catch (Exception ex) { }
+    }
+
+    //public class WeatherForecast
+    //{
+    //    public DateTime Date { get; set; }
+
+    //    public int TemperatureC { get; set; }
+
+    //    public string Summary { get; set; }
+
+    //    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    //}
+}
