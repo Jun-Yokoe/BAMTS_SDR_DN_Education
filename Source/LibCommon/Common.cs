@@ -13,7 +13,7 @@ namespace BAMTS.Internal
         public static string TARGET_EXCEL_FILE_PATH = @"C:\User\Projects\Practice\Education\Test\Data\EMPLOYEE.xlsx";
         public static string TARGET_EXCEL_FILE_SHEET = "EMPLOYEE";
         public static string TARGET_WEBAPI_HOST = "192.168.1.12";
-        public static int TARGET_WEBAPI_PORTNO = 1486;
+        public static int TARGET_WEBAPI_PORTNO = 1486;      
         public static string TARGET_WEBAPI_CONTROLLER = "DatabaseAccessController";
     }
 }

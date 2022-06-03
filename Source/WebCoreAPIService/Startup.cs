@@ -25,7 +25,14 @@ namespace WebCoreAPIService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            //services.AddCors(); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+            services.AddCors(options =>
+                options.AddDefaultPolicy(builder =>
+                {
+                    //builder.WithOrigins("http://192.168.1.12:1487").AllowAnyMethod().AllowAnyHeader();
+                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                })
+            ); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -42,6 +49,9 @@ namespace WebCoreAPIService
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebCoreAPIService v1"));
             }
+
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+            //app.UseCors(); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
 
             app.UseRouting();
 

@@ -112,21 +112,24 @@ using System.Net;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "C:\User\Projects\Practice\Education\Source\BlazorSPAWebAssembly\Pages\EmployeeList.razor"
+#line 36 "C:\User\Projects\Practice\Education\Source\BlazorSPAWebAssembly\Pages\EmployeeList.razor"
        
-
+    string message = "";
     //WebAPIClientAccessor webClient = new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER);
-    IList<RecEmployeeAll> list = new List<RecEmployeeAll>();
+    List<RecEmployeeAll> list = new List<RecEmployeeAll>();
 
     private async void LoadDataAsync()
     {
         try
         {
+            message = "Please wait...";
             //using (HttpClient client = new HttpClient())
             //{
-            //    var response = client.GetAsync("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll").GetAwaiter().GetResult();
+            //    //var response = client.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll").GetAwaiter().GetResult();
+            //    //var response = await client.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //    var response = await client.GetAsync("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
             //    if (response.StatusCode == HttpStatusCode.OK)
-            //        this.list = JsonConvert.DeserializeObject<IList<RecEmployeeAll>>(response.Content.ReadAsStringAsync().Result);
+            //        this.list = JsonConvert.DeserializeObject<List<RecEmployeeAll>>(response.Content.ReadAsStringAsync().Result);
             //    else
             //        throw new Exception(response.Content.ReadAsStringAsync().Result);
             //}
@@ -139,10 +142,23 @@ using System.Net;
             //this.list.Add(new RecEmployeeAll(new List<string>() { "00006", "内藤　光治", "1960/02/22", "2002/01/01", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
             //this.list.Add(new RecEmployeeAll(new List<string>() { "00007", "横江　純", "1960/02/22", "1972/08/13", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
 
-            this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll");
+            //var work = await Http.GetAsync("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            //var work = await Http.GetAsync("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll");
+            //var work = await Http.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:5000/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            message = "";
+        }
+        catch (Exception ex)
+        {
+            message = ex.Message;
+        }
+        finally
+        {
             this.StateHasChanged();
         }
-        catch (Exception ex) { }
     }
 
     //public class WeatherForecast

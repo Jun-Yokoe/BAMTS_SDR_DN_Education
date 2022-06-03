@@ -1,0 +1,15 @@
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\appsettings.Development.json
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\appsettings.json
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\WebCoreAPIService.pdb
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\clrcompression.dll
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\clrjit.dll
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\coreclr.dll
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\mscordaccore.dll
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\aspnetcorev2_inprocess.dll
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\sni.dll
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\LibDatabaseAccess.pdb
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\LibModels.pdb
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\LibCommon.pdb
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\BAMSS.Data.SQLServerAccessor.pdb
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\BAMSS.Logging.Message.LoggingMessageInterface.pdb
+C:\User\Projects\Practice\Education\Source\WebCoreAPIService\obj\Release\net5.0\win-x86\PubTmp\Out\WebCoreAPIService.exe

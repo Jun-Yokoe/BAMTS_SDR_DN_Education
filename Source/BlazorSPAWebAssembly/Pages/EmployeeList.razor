@@ -2,7 +2,7 @@
 
 @using BAMTS.Internal;
 @using Newtonsoft.Json;
-@using System.Net; 
+@using System.Net;
 @inject HttpClient Http;
 
 <h1>EmployeeList</h1>
@@ -10,10 +10,10 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
+            <th>社員ID</th>
+            <th>社員名</th>
+            <th>生年月日</th>
+            <th>携帯電話メールアドレス</th>
         </tr>
     </thead>
     <tbody>
@@ -22,7 +22,7 @@
             <tr>
                 <td>@item.EMP_ID</td>
                 <td>@item.EMP_NAME</td>
-                <td>@item.BIRTH_DATE.ToString("yyyy/MM/dd");</td>
+                <td>@item.BIRTH_DATE.ToString("yyyy/MM/dd")</td>
                 <td>@item.CELLPHONE_MAIL_ADDRESS</td>
             </tr>
         }
@@ -31,20 +31,25 @@
 
 <button class="btn btn-primary" @onclick="LoadDataAsync">Display List</button>
 
-@code {
+<h2>@message</h2>
 
+@code {
+    string message = "";
     //WebAPIClientAccessor webClient = new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER);
-    IList<RecEmployeeAll> list = new List<RecEmployeeAll>();
+    List<RecEmployeeAll> list = new List<RecEmployeeAll>();
 
     private async void LoadDataAsync()
     {
         try
         {
+            message = "Please wait...";
             //using (HttpClient client = new HttpClient())
             //{
-            //    var response = client.GetAsync("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll").GetAwaiter().GetResult();
+            //    //var response = client.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll").GetAwaiter().GetResult();
+            //    //var response = await client.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //    var response = await client.GetAsync("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
             //    if (response.StatusCode == HttpStatusCode.OK)
-            //        this.list = JsonConvert.DeserializeObject<IList<RecEmployeeAll>>(response.Content.ReadAsStringAsync().Result);
+            //        this.list = JsonConvert.DeserializeObject<List<RecEmployeeAll>>(response.Content.ReadAsStringAsync().Result);
             //    else
             //        throw new Exception(response.Content.ReadAsStringAsync().Result);
             //}
@@ -57,10 +62,23 @@
             //this.list.Add(new RecEmployeeAll(new List<string>() { "00006", "内藤　光治", "1960/02/22", "2002/01/01", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
             //this.list.Add(new RecEmployeeAll(new List<string>() { "00007", "横江　純", "1960/02/22", "1972/08/13", "0", "1", "090-1111-2222", "kitamura-cp@bamts.ne.jp", "kitamura-pc@bamts.co.jp", "passpass", "部長" }));
 
-            this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll");
+            //var work = await Http.GetAsync("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            //var work = await Http.GetAsync("http://192.168.1.12:1486/api/DatabaseAccessController/GetEmployeeAll");
+            //var work = await Http.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:5000/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            message = "";
+        }
+        catch (Exception ex)
+        {
+            message = ex.Message;
+        }
+        finally
+        {
             this.StateHasChanged();
         }
-        catch (Exception ex) { }
     }
 
     //public class WeatherForecast
