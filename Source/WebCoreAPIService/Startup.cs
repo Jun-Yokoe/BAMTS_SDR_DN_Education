@@ -20,19 +20,26 @@ namespace WebCoreAPIService
             Configuration = configuration;
         }
 
+        private readonly string MyAllowSpecificOrigins = "_WebCoreAPIServiceAllowSpecificOrigins";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddCors(); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
-            services.AddCors(options =>
-                options.AddDefaultPolicy(builder =>
-                {
-                    //builder.WithOrigins("http://192.168.1.12:1487").AllowAnyMethod().AllowAnyHeader();
-                    builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-                })
-            ); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+            //services.AddCors(options =>
+            //    options.AddDefaultPolicy(builder =>
+            //    {
+            //        //builder.WithOrigins("http://192.168.1.12:1487").AllowAnyMethod().AllowAnyHeader();
+            //        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            //    })
+            //); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+            services.AddCors(o => o.AddPolicy(this.MyAllowSpecificOrigins, builder =>
+            {
+                builder.AllowAnyOrigin()    // すべてのオリジンからの CORS 要求を許可
+                       .AllowAnyMethod()    // すべての HTTP メソッドを許可
+                       .AllowAnyHeader();   // すべての作成者要求ヘッダーを許可
+            })); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -50,8 +57,17 @@ namespace WebCoreAPIService
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebCoreAPIService v1"));
             }
 
-            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
             //app.UseCors(); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+            //app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+            app.UseCors(this.MyAllowSpecificOrigins); //★追加（だいがいそうやけど、ネットワーク越しにアクセスされる場合に必要）★
+
+            //app.UseCors(cors => cors
+            //.AllowAnyOrigin()
+            //.AllowAnyMethod()
+            //.AllowAnyHeader()
+            //.SetIsOriginAllowed(origin => true)
+            //.AllowCredentials()
+            //);
 
             app.UseRouting();
 

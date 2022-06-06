@@ -96,8 +96,9 @@ using BlazorSPAWebAssembly.Shared;
     private WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    {   //http://192.168.1.12:1487/WeatherForecast
+        //forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("http://192.168.1.12:1487/WeatherForecast");
     }
 
     public class WeatherForecast

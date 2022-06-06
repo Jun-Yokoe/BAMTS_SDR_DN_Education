@@ -147,8 +147,8 @@ using System.Net;
             //var work = await Http.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
             //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
             //this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:5000/api/DatabaseAccessController/GetEmployeeAll");
-            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
-            this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
             message = "";
         }
         catch (Exception ex)

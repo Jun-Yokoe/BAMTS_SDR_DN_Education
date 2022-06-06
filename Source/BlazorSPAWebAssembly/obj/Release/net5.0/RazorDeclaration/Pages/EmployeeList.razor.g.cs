@@ -112,9 +112,9 @@ using System.Net;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 34 "C:\User\Projects\Practice\Education\Source\BlazorSPAWebAssembly\Pages\EmployeeList.razor"
+#line 36 "C:\User\Projects\Practice\Education\Source\BlazorSPAWebAssembly\Pages\EmployeeList.razor"
        
-
+    string message = "";
     //WebAPIClientAccessor webClient = new WebAPIClientAccessor(Common.TARGET_WEBAPI_HOST, Common.TARGET_WEBAPI_PORTNO, Common.TARGET_WEBAPI_CONTROLLER);
     List<RecEmployeeAll> list = new List<RecEmployeeAll>();
 
@@ -122,6 +122,7 @@ using System.Net;
     {
         try
         {
+            message = "Please wait...";
             //using (HttpClient client = new HttpClient())
             //{
             //    //var response = client.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll").GetAwaiter().GetResult();
@@ -146,11 +147,18 @@ using System.Net;
             //var work = await Http.GetAsync("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
             //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
             //this.list = await Http.GetFromJsonAsync<IList<RecEmployeeAll>>("http://192.168.1.12:5000/api/DatabaseAccessController/GetEmployeeAll");
-            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
-            this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://192.168.1.12:1487/api/DatabaseAccessController/GetEmployeeAll");
+            //this.list = await Http.GetFromJsonAsync<List<RecEmployeeAll>>("http://localhost:5000/api/DatabaseAccessController/GetEmployeeAll");
+            message = "";
+        }
+        catch (Exception ex)
+        {
+            message = ex.Message;
+        }
+        finally
+        {
             this.StateHasChanged();
         }
-        catch (Exception ex) { }
     }
 
     //public class WeatherForecast

@@ -199,14 +199,14 @@
       "LibModels.dll": "sha256-VdirISEfot+45RhbbPTuDAeanLRVon4JuM1+N3\/wev8=",
       "BAMSS.Data.SQLServerAccessor.dll": "sha256-h4cmZJbnjfutSlau1pzVRmbANyBtrvpFfcx6Vidjazk=",
       "BAMSS.Logging.Message.LoggingMessageInterface.dll": "sha256-RTLsE9rlgPjtU5KSjZG967+zrISWOTL3mcW3FBOeXg8=",
-      "BlazorSPAWebAssembly.dll": "sha256-Jnn0FWH3KryuB7q7FH4zZn+hdC8rvBNcVnoIAC7+Zns="
+      "BlazorSPAWebAssembly.dll": "sha256-NEzudkLlRlce3RECrpA3Tn9xFU7PMCwF0UEP0V5cZAk="
     },
     "lazyAssembly": null,
     "pdb": {
       "LibModels.pdb": "sha256-csFo6hueKdMKIN0OYYY3fCwsYfXn6nv8KkPMA\/HB6Es=",
       "BAMSS.Data.SQLServerAccessor.pdb": "sha256-xC9QOhQdQSBin9fKC2UJdy\/dcUBW18AoGyDx5Fu0rKs=",
       "BAMSS.Logging.Message.LoggingMessageInterface.pdb": "sha256-uK42rPpactgoI2LWAGcVr1lQ7Gp+sNk4PveVXBFB\/cE=",
-      "BlazorSPAWebAssembly.pdb": "sha256-r8TQffmvVQnA47W3zNDFtz5AJ8hG05rUWGjyh2HRUP8="
+      "BlazorSPAWebAssembly.pdb": "sha256-GDXiVuTcAaD0ot4x0lrASjETs1l4l4TC9b+4\/X4siF8="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-8oJip361m8OrfLRJOuIeswWKaoxtT27\/wINCxhn+s4c=",
